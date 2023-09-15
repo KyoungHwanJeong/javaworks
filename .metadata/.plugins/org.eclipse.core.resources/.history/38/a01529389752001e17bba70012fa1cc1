@@ -1,0 +1,8 @@
+package arraycopy;
+
+public class Book {
+
+	String bookName;
+	String author;
+	
+}

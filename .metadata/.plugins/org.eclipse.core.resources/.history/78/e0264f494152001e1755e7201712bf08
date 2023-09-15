@@ -1,0 +1,17 @@
+package customers_2;
+
+public class VIPCustomer extends Customer{
+
+	private int agentId;
+	double salesRatio=0.1;
+	
+	public VIPCustomer() {
+		
+	}
+	public VIPCustomer(int customerId, String customerName,int agentId) {
+		super(customerId,customerName);
+		this.agentId=agentId;
+		
+	}
+	
+}

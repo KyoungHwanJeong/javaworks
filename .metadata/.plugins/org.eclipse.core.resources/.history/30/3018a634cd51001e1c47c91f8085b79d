@@ -1,0 +1,13 @@
+package statics.card_2;
+
+public class Card {
+
+	static private int cardNumber;
+	
+	public Card() {
+		cardNumber++; 
+	}
+	public int getCardNumber() {
+		return cardNumber;
+	}
+}

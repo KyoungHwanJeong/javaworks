@@ -1,0 +1,28 @@
+package basicclass;
+
+public class BookTest {
+	
+	/*
+	 * book 클래스: 책 번호, 책 제목
+	 * 
+	 * 책 번호에 100, 제목에 "개미"
+	 * print함수를 이용해서 출력, toString함수를 이용해서 출력
+	 * 문자열에 "개미"
+	 * 
+	 */
+
+	public static void main(String[] args) {
+
+		Book book1 = new Book(100, "개미");	// 메서드 재정의
+		System.out.println(book1);
+		System.out.println(book1.toString());
+		
+		String msg_1 = "개미";				// 문자열
+		System.out.println(msg_1.toString());
+		
+		
+		String msg = new String("개미");		// 문자열 객체
+		System.out.println(msg.toString());
+	}
+
+}

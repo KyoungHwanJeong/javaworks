@@ -1,0 +1,9 @@
+package inheritance.statement;
+
+public class Drink {
+
+	private String name;	// 상품명
+	private int price;		// 가격
+	private int count;		// 수량
+	
+}

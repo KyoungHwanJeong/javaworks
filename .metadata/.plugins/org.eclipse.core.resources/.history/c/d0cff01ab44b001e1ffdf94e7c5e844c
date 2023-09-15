@@ -1,0 +1,15 @@
+package data;
+
+public class Var2 {
+
+	public static void main(String[] args) {
+		// 1 inch는 2.54 cm입니다.
+		
+		double inchToCm = 2.54;
+		
+		System.out.println("1 inch는 " + inchToCm + "입니다.");
+		
+		
+		
+	}
+}

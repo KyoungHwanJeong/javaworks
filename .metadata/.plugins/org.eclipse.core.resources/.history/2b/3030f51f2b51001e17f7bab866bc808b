@@ -1,0 +1,10 @@
+package transport;
+
+public class Student {
+
+	int id;
+	int serialNum = 1000;
+	String name;
+	
+	
+}

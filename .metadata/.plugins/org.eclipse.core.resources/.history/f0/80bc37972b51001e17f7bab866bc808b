@@ -1,0 +1,15 @@
+package transport;
+
+public class Student {
+
+	int id;
+	static int SERIALNUM = 1000;
+	String name;
+	
+	public Student() {
+		SERIALNUM++;
+	}
+	public int getSerialNum() {
+		return SERIALNUM;
+	}
+}

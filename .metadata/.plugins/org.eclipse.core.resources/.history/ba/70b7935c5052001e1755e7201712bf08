@@ -1,0 +1,24 @@
+package polymorphism.fruits_2;
+
+public class Main {
+
+	/*
+	 * 메뉴 선택화면
+	 * 1. 포토 | 2. 바나나 | 3. 복숭아
+	 * 
+	 * 객체- 포도, 바나나, 복숭아는 과일에 상속받는다.
+	 * 이름: 포도, 무게 700g, 가격 5000
+	 * 이름: 바나나, 무게 600g, 가격 4000
+	 * 이름: 복숭아, 무게 900g, 가격 10000
+	 * 
+	 * showFruitInfo 에서 
+	 * 과일 이름, 무게, 가격을 출력한다.
+	 * 
+	 */
+	
+	public static void main(String[] args) {
+
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+package polymorphism.fruits_2;
+
+public class Fruit {
+
+	protected String name;
+	protected int weight;
+	protected int price;
+}

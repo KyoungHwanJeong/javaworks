@@ -1,0 +1,5 @@
+package kr.or.iei_2.model;
+
+public class User {
+
+}

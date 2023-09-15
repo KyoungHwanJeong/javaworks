@@ -1,0 +1,14 @@
+package operator;
+
+public class DataTypeEx {
+
+	public static void main(String[] args) {
+
+		// int, long의 사용
+		// int = 4 Bytes(32 bits) -21억 ~ 21억
+		// long = 8 Bytes(64 bits) 2^64 ~ (2^64)-1 
+		
+		
+	}
+
+}

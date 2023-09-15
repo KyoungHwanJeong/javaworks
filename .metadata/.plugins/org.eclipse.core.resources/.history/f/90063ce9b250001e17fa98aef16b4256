@@ -1,0 +1,10 @@
+package objectarray_2.dogs_2;
+
+public class DogArray_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

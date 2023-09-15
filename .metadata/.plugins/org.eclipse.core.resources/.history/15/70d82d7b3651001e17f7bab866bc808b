@@ -1,0 +1,22 @@
+package reference.subject2;
+
+public class StudentTest {
+	
+	/*
+	 * 객체 내용: 학번 101, 이름 김대한
+	 * 			국어 90점, 수학 85점, 과학 78점
+	 * 
+	 * student 클래스의 정의
+	 * 
+	 */
+
+	public static void main(String[] args) {
+
+		Student kim = new Student(101, "김대한");
+		kim.addSubject("국어", 90);
+		kim.addSubject("수학", 85);
+		kim.addSubject("과학", 78);
+		kim.showStudentInfo();
+	}
+
+}

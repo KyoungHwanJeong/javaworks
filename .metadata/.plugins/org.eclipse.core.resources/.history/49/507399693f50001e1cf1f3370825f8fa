@@ -1,0 +1,11 @@
+package classes;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+
+		// Student 객체(변수)를 생성
+		
+	}
+
+}

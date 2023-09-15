@@ -1,0 +1,10 @@
+package reference.subject;
+
+// Subject 자료형 정의
+public class Subject {
+
+	private String subjectName;	//과목이름
+	private int scorePoint;
+	
+	
+}

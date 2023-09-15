@@ -1,0 +1,6 @@
+package objecarray.books;
+
+// Book 자료형 정의
+public class Book {
+
+}

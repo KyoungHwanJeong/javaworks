@@ -1,0 +1,8 @@
+package overriding.shop;
+
+public class Shop1 extends HeadShop {
+
+	// 역세권
+	
+	
+}

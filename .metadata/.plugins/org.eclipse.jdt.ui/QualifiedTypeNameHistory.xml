@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="data.Var2Info"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="dates.LocalDateTimeTest"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="classes.methods.Hello"/>
+    <fullyQualifiedTypeName name="classes.methods.Calculator"/>
+    <fullyQualifiedTypeName name="reference.circle.Circle"/>
+    <fullyQualifiedTypeName name="reference.subject.Subject"/>
+    <fullyQualifiedTypeName name="statics.Student"/>
+    <fullyQualifiedTypeName name="inheritance.airplane.SuperSonicAirPlane"/>
+    <fullyQualifiedTypeName name="customers.VIPCustomer"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="kr.or.iei_2.model.User"/>
+    <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
+</qualifiedTypeNameHistroy>

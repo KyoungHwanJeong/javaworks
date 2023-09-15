@@ -1,0 +1,12 @@
+package ifexample;
+
+public class Seat {
+
+	public static void main(String[] args) {
+		
+		//
+		
+		int memberNum, ;
+	}
+
+}

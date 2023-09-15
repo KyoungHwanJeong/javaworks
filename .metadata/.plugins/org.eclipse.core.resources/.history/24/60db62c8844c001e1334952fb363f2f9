@@ -1,0 +1,31 @@
+package ifexample;
+
+public class Seats {
+
+	public static void main(String[] args) {
+		
+		// 입장객 수에 따른 좌석 줄 수(행) 계산
+		// 변수 - 고객 customer, 열 colunmn, 행 row
+		
+		
+		
+		int customer=20, column=5;
+		int row = customer/ column;
+		
+		//연산처리	(if ~else 문)
+		
+		//row = customer/ column;
+		
+		if(customer>= column) {
+			if(customer % column != 0) {
+				int customer_re = customer % column;
+				System.out.println(row +"줄이 필요하고, " + customer_re + "명은 앉지 못합니다.");
+
+			}else {
+				System.out.println(row + "줄이 필요합니다.");
+			}
+		}
+		
+	}
+
+}

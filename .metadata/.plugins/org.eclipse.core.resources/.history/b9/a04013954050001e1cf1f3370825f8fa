@@ -1,0 +1,19 @@
+package classes;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+
+		// Student 객체(변수)를 생성
+		// 메모리영역(new를 하면 heap 영역을 사용)
+		// 객체 접근 방법: 점 연산자로 접근한다.
+		
+		Student student1 = new Student();
+		student1.studentName ="홍길동";
+		student1.studentId= 101;
+		System.out.println(student1.studentName);
+		System.out.println(student1.studentId);
+		
+	}
+
+}

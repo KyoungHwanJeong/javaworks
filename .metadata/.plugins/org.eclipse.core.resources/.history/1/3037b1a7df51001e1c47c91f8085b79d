@@ -1,0 +1,8 @@
+package basicclass;
+
+public class Book {
+
+	int bookNumber;
+	String bookTitle;
+	
+}

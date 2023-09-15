@@ -1,0 +1,8 @@
+package ifexample;
+
+public class SeatsCal {
+
+	public static int seatcal(int ){
+		
+	}
+}

@@ -1,0 +1,12 @@
+package operator;
+
+public class DataTypeEx {
+
+	public static void main(String[] args) {
+
+		// int, long의 사용
+		
+		
+	}
+
+}

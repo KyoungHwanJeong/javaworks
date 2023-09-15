@@ -1,0 +1,22 @@
+package reference.subject;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+
+		// std1, std2 객체 생성하기
+		Student std1 = new Student(101,"홍길동");
+		Student std2 = new Student(102,"정경환");
+		
+		// 과목추가
+		std1.koreanSubject("국어", 90);
+		std1.mathSubject("수학", 83);
+		
+		std2.koreanSubject("국어", 11);
+		std2.mathSubject("수학", 22);
+		
+		// 학생 정보 출력
+		std1.showStudentInfo();
+		std2.showStudentInfo();
+	}
+}

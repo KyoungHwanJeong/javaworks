@@ -1,0 +1,15 @@
+package classes_2.constructor_2;
+
+public class Person_2 {
+
+	String name;
+	float heigth;
+	float weigth;
+	
+	public Person_2(){
+		
+	}
+	public Person_2(String n,float hei,float wei) {
+		
+	}
+}

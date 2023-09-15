@@ -1,0 +1,16 @@
+package transport_2;
+
+public class Subway {
+
+	private String lineNumber;
+	private int passengerNum;
+	private int money;
+	
+	Subway(String lineNumber){
+		this.lineNumber=lineNumber;
+	}
+	
+	public void takeSubway() {
+		
+	}
+}

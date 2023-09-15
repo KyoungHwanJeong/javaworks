@@ -1,0 +1,9 @@
+package data;
+
+public class ByteTypeTest {
+
+	public static void main(String[] args) {
+		
+		
+	}
+}

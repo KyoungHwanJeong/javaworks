@@ -1,0 +1,15 @@
+package statics.card_2;
+
+public class Card {
+
+	static private int cardNumber;
+	private int serialNumber;
+	
+	public Card() {
+		serialNumber++;
+		cardNumber=serialNumber;
+	}
+	public int getCardNumber() {
+		return cardNumber;
+	}
+}

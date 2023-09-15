@@ -1,0 +1,8 @@
+package thissamples;
+
+public class Birthday {
+
+	int day;
+	int month;
+	int year;
+}

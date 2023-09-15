@@ -1,0 +1,23 @@
+package data;
+
+public class PrintData {
+
+	public static void main(String[] args) {
+
+		
+		// 데이터 다루기 - 코드의 끝은 세미콜론(;)으로 끝남
+		// 숫자
+		
+		
+		System.out.println(10);		// 정수
+		
+		
+		// 문자 -  " "로 감싼 데이터
+		
+		System.out.println("apple");
+		System.out.println('A');// 한 문자인 경우는 ' '로 감쌈
+		
+		
+	}
+
+}

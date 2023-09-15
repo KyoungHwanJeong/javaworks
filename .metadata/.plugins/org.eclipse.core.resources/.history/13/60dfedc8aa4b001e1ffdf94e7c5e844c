@@ -1,0 +1,15 @@
+package data;
+
+public class PrintData {
+
+	public static void main(String[] args) {
+
+		
+		// 데이터 다루기
+		// 숫자
+		
+		
+		
+	}
+
+}

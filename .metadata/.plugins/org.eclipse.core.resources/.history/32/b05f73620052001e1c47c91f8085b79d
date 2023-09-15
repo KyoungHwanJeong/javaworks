@@ -1,0 +1,8 @@
+package polymorphism.fruits;
+
+public class Fruit {
+
+	// 필드
+	String name;
+	String weight;
+}

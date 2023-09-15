@@ -1,0 +1,13 @@
+package operator;
+
+public class OperatorEx2 {
+
+	public static void main(String[] args) {
+
+		// 비교 연산자
+		System.out.println(4<5);
+		
+		
+	}
+
+}

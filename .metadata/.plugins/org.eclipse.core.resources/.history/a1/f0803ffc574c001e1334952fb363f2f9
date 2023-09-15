@@ -1,0 +1,17 @@
+package data;
+
+public class ByteTypeTest {
+
+	public static void main(String[] args) {
+		// byte 관련 자료형
+		// 정수 자료형 - byte, short, int, long
+		// byte의 범위 (-)2^7 ~ 2^7 (256개)
+		
+		byte bData1 = -128;
+		byte bData2 = 128;
+		
+		System.out.println(bData1);
+		System.out.println(bData2);
+		
+	}
+}

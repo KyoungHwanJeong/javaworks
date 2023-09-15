@@ -1,0 +1,6 @@
+package customers;
+
+public class VIPCustomer extends Customer{
+
+	
+}

@@ -1,0 +1,6 @@
+package operator;
+
+public class SumScore(int korScore,int mathScore) {
+	return (korScore+mathScore);
+
+}

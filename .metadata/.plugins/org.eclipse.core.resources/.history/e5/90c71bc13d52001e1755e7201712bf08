@@ -1,0 +1,9 @@
+package customers_2;
+
+public class Customer {
+
+	protected int CustomerId;
+	protected String CustomerName;
+	protected String CustomerGrade;
+	
+}

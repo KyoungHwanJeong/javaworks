@@ -1,0 +1,22 @@
+package whileexample;
+
+public class WhileEx2 {
+
+	public static void main(String[] args) {
+
+		// 1부터 10까지의 합계
+		
+		int num=0, sum=0;
+		
+		
+		
+		while(num < 10) {
+			
+			sum += num;
+			++num;
+			System.out.println(sum);
+		}
+		
+	}
+
+}

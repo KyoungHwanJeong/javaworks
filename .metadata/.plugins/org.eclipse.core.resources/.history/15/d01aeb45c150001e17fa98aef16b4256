@@ -1,0 +1,11 @@
+package reference_2.subject_2;
+
+public class Student_2 {
+
+	private int studentid;
+	private String studentName;
+	
+	Subject_2 korean;
+	Subject_2 math;
+	
+}

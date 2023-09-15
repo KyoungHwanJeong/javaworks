@@ -1,0 +1,12 @@
+package protectedex.pack2;
+
+import protectedex.pack1.A;
+
+public class D extends A{
+
+	public D() {
+		//super();	//생성자 D의 매개변수가 없을 때 생략 가능하다.
+		this.field= "yes";
+		this.method();
+	}
+}

@@ -1,0 +1,6 @@
+package polymorphism.fruits;
+
+public class Grape extends Fruit{
+
+	
+}

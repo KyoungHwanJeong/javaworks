@@ -1,0 +1,13 @@
+package operator;
+
+public class Operator3 {
+
+	public static void main(String[] args) {
+		// 조건 연산자 -> 조건문(if문)
+		// 결과값 = (조건비교) ? 참값 : 거짓값
+		
+		// 예제1.
+		(4 > 5) > 10 : 20;
+		
+	}
+}

@@ -1,0 +1,28 @@
+package inheritance.airplane;
+
+public class Main {
+
+	/*
+	 * 
+	 * 비행기 동작: 이륙, 비행, 착륙
+	 * 
+	 * 
+	 */
+	
+	public static void main(String[] args) {
+		SuperSonicAirPlane sa = new SuperSonicAirPlane();
+		
+		sa.takeOff();
+		sa.fly();
+		
+		// 모드 변경 - (static) 클래스 이름으로 직접 접근
+		sa.flyMode = SuperSonicAirPlane.SUPERSONIC;
+		sa.fly();
+		
+		sa.flyMode = SuperSonicAirPlane.NORMAL;
+		sa.fly();
+		
+		sa.land();
+		
+	}
+}

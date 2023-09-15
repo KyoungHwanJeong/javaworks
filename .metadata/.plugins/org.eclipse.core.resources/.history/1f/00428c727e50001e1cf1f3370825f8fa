@@ -1,0 +1,10 @@
+package reference.subject;
+
+public class Student {
+
+	// field
+	int studentId;		// 학번
+	String studentName;	// 이름
+	
+	
+}

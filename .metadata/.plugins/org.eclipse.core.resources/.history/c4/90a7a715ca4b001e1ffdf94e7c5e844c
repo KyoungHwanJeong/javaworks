@@ -1,0 +1,21 @@
+package operator;
+
+public class OperatorEx3 {
+
+	public static void main(String[] args) {
+		// 조건 연산자 -> 조건문(if문)
+		// 결과값 = (조건비교) ? 참값 : 거짓값
+		
+		// 예제1. - 결과값이 정수면 정수 변수 선언
+		int num = (4 > 5) ? 10 : 20;
+		System.out.println("결과값: "+num);
+		
+		// 예제2. - 결과값이 한 문자로 출력 : 'T' / 'F'
+		int fatherAge = 45;
+		int motherAge = 48;
+		
+		char result = (fatherAge > motherAge) ? 'T' : 'F';
+		System.out.println("결과값: "+result);// F
+
+	}
+}

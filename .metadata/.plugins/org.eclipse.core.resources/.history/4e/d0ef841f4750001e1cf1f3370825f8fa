@@ -1,0 +1,17 @@
+package classes.constructor;
+
+public class PersonTest {
+
+	public static void main(String[] args) {
+	
+		// Person 객체 생성과 사용
+		// 기본 생성자로 생성 constructor
+		Person person1 = new Person();
+		person1.name="우영우";
+		person1.height=165.3f;
+		person1.weight=51.2f;
+		
+		person1.showPersonInfo();
+	}
+
+}

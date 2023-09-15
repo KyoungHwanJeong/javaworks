@@ -1,0 +1,11 @@
+package data;
+
+public class ByteTypeTest {
+
+	public static void main(String[] args) {
+		// byte 관련 자료형
+		
+		
+		
+	}
+}
