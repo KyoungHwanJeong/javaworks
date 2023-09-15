@@ -35,6 +35,12 @@ public class CalendarTest2 {
 		betweenTime=betweenTime/(24*60*60*1000);
 		System.out.println(betweenTime + "일이 지났습니다.");
 		
+		// 현재 까지의 시간(밀리초)
+		System.out.println(System.currentTimeMillis());
+		//System.out.println(System.nanoTime());
+		
+		// 현재 까지의 시간(나노초)
+		System.out.println(System.nanoTime());
 		
 	}
 
