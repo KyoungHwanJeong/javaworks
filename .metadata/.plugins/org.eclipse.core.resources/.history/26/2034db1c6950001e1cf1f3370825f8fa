@@ -1,7 +1,0 @@
-package reference.circle;
-
-// Point 자료형 생성
-public class Point {
-
-	int x, y;
-}

@@ -21,4 +21,6 @@
     <fullyQualifiedTypeName name="kr.or.iei_2.model.User"/>
     <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
     <fullyQualifiedTypeName name="singleton.student.Student"/>
+    <fullyQualifiedTypeName name="javax.print.attribute.standard.PrinterMessageFromOperator"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
