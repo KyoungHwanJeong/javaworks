@@ -1,6 +1,11 @@
 package array2d;
 
 public class ArrayAlphabet2 {
+	
+	/*
+	 * 2차원 배열에 알파벳을 저장하고 출력하기.
+	 * 
+	 */
 
 	public static void main(String[] args) {
 

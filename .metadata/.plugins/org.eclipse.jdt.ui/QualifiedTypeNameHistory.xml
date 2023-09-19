@@ -23,4 +23,7 @@
     <fullyQualifiedTypeName name="singleton.student.Student"/>
     <fullyQualifiedTypeName name="javax.print.attribute.standard.PrinterMessageFromOperator"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon.RemoteControl"/>
+    <fullyQualifiedTypeName name="interfaceex.scheduler.PriorityAllocation"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

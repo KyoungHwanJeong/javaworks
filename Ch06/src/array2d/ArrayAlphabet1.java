@@ -2,6 +2,16 @@ package array2d;
 
 public class ArrayAlphabet1 {
 
+	/*
+	 * 대문자 26자를 배열에 저장하고,
+	 * 일반 for문을 사용해서 아스키 코드값 65~90까지의 알파벳 출력하기.
+	 * 알파벳의 마지막 값을 출력하기.
+	 * char 문자 'A'부터 +1한 26개의 문자를 배열에 저장하고,
+	 * 다시 알파벳을 출력하기.
+	 * 
+	 * 
+	*/
+	
 	public static void main(String[] args) {
 
 		// 대문자 26자를 배열에 저장
@@ -29,11 +39,14 @@ public class ArrayAlphabet1 {
 		//alphabets[0] = ch;
 		//System.out.println(alphabets[0]);	// A
 		
-		//alphabets[1] = (char)(ch + 1);	// ch= 2 byte, 1= 4 byte
-										// JAVA에서 덧셈 연산하면 int형으로 바뀜.
-										// -> 다시 형변환.
-		//ch++;				// ch = ch + 1, 1 증가
-		//alphabets[1] = ch;
+		//alphabets[1] = (char)(ch + 1);
+								// ch= 2byte, 1= 4byte
+								// JAVA에서 덧셈 연산하면 int형으로 바뀜.
+								// -> 다시 형변환.
+		/*
+		ch++;				// ch = ch + 1, 1 증가(후 증가)
+		alphabets[1] = ch;
+		*/
 		//System.out.println(alphabets[1]);	// B
 		
 		// 알파벳을 배열에 저장 - 1증가
@@ -47,6 +60,7 @@ public class ArrayAlphabet1 {
 		for(int i=0; i< alphabets.length;i++) {
 			System.out.print(alphabets[i]+ " ");
 		}
+		
 		
 	}
 

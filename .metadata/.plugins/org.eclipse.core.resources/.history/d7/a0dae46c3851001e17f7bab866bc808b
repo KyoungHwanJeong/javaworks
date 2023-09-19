@@ -1,7 +1,0 @@
-package inheritance.airplane;
-
-public class SuperSonicAirPlane extends AirPlane{
-
-	// 1- 일반비행, 2- 초음속비행
-	int flyMode = 1;
-}

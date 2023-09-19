@@ -6,10 +6,12 @@ public class Array2dTest1 {
 
 		// 정수형 2차원 배열
 		int[][] arr = new int[2][3];
+		System.out.println("==========1================");
 		System.out.println(arr.length);		// 행의 크기
-		System.out.println(arr[0].length);	// 1열의 크기
-		System.out.println(arr[1].length);	// 2열의 크기
+		System.out.println(arr[0].length);	//1행의 1열의 크기
+		System.out.println(arr[1].length);	//1행의 2열의 크기
 		
+		System.out.println("==========2================");
 		// 전체 출력
 		for(int i=0; i<arr.length;i++){
 			for(int j=0;j<arr[i].length;j++) {
@@ -17,6 +19,7 @@ public class Array2dTest1 {
 			}
 			System.out.println();	// 줄바꿈
 		}
+		System.out.println("==========3================");
 		
 		// 배열에 값을 저장
 		arr[0][0]=1;
@@ -29,6 +32,8 @@ public class Array2dTest1 {
 		// 특정한 요소를 인덱싱
 		System.out.println(arr[1][1]);
 		
+		System.out.println("===========4================");
+		
 		// 전체 출력
 		for(int i=0; i<arr.length;i++){
 			for(int j=0;j<arr[i].length;j++) {
@@ -37,7 +42,7 @@ public class Array2dTest1 {
 			System.out.println();	// 줄바꿈
 		}
 		
-		System.out.println("==============1==================");
+		System.out.println("==============5==================");
 		
 		// 선언과 함께 초기화
 		int[][] arr2 = {
@@ -48,7 +53,7 @@ public class Array2dTest1 {
 		
 		// 특정한 요소를 인덱싱
 		System.out.println(arr[1][1]);
-		
+		System.out.println("===============6=================");
 		// 전체 출력
 		for(int i=0; i<arr2.length;i++){
 			for(int j=0;j<arr2[i].length;j++) {

@@ -22,10 +22,10 @@ public class EqualsTest {
 		
 		// 인스턴스의 메모리 주소를 비교
 		// 해쉬 코드 - 물리적 메모리 주소(십진수)
-		System.out.println(name1 == name2);		// 주소가 다르다 false
 		System.out.println(System.identityHashCode(name1));
 		System.out.println(System.identityHashCode(name2));
 		
+		System.out.println(name1 == name2);		// 주소가 다르다 false
 		System.out.println(name1.equals(name2));// 문자열 비교 true
 		
 		System.out.println("======================================");

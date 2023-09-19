@@ -13,7 +13,7 @@ class Employee{
 	// equals 메서드 재정의
 	@Override
 	public boolean equals(Object obj) { 
-							// Employee < obj 이므로
+							// Employee < obj (자료 크기)이므로
 							// 논리적으로 문자열이 동일하도록 구현
 		if(obj instanceof Employee) {
 								// obj가 Employee의 인스턴스라면
@@ -26,12 +26,12 @@ class Employee{
 		return false;
 	}
 
-	/*
+	
 	@Override
 	public int hashCode() {	// int형인 empId를 반환함
-		return empId;
+		return empId;		// 문자로 받으면 .hashCode() 변환한다.
 	}		
-	*/
+	
 }
 
 public class HashCodeTest {
@@ -40,7 +40,7 @@ public class HashCodeTest {
 		Employee emp1 = new Employee(101, "장그래");
 		Employee emp2 = new Employee(101, "장그래");
 		
-		System.out.println(emp1 == emp2);	// false
+		System.out.println(emp1 == emp2);	// false 힙 메모리.
 		System.out.println(emp1.equals(emp2));
 							// equals를 재정의 하면 true가 된다.
 		
@@ -49,7 +49,7 @@ public class HashCodeTest {
 		System.out.println(emp1.hashCode());
 		System.out.println(emp2.hashCode());
 		
-		// 실제 물리 주소 비교
+		// 실제 물리 주소 비교 - 해시코드를 재정의 했기 때문에 같다.
 		System.out.println(System.identityHashCode(emp1));
 		System.out.println(System.identityHashCode(emp2));
 	

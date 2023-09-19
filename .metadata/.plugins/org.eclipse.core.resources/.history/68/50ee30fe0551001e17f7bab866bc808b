@@ -1,7 +1,0 @@
-package kr.or.iei.model;
-
-public class User {
-
-	// 필드(속성)
-	
-}
