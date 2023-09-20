@@ -1,4 +1,4 @@
-package abstracts.animal;
+package abstracts.animal_2;
 
 /*
  * Cat과 Dog의 클래스는 Animal 클래스의 상속을 받는다.
@@ -22,36 +22,30 @@ package abstracts.animal;
 */
 
 public class AnimalTest {
-	
+
 	public static void main(String[] args) {
+
+		System.out.println("==========1==============");
+		Animal cat1 = new Cat();
+		cat1.breat();
+		cat1.sound();
 		
-		
-		System.out.println("==========1================");
-		// Cat 클래스의 인스턴스 생성
-		Cat cat = new Cat();
-		cat.breat();
-		cat.sound();
-		System.out.println("==========2================");
-		
-		// 다형성으로 객체 생성
+		System.out.println("==========2==============");
 		Animal cat2 = new Cat();
 		cat2.breat();
 		cat2.sound();
 		
-		System.out.println("==========3================");
-
-		Animal dog = new Dog();
-		dog.breat();
-		dog.sound();
+		System.out.println("==========3==============");
+		Animal dog1 = new Dog();
+		dog1.breat();
+		dog1.sound();
 		
-		System.out.println("==========4================");
+		System.out.println("==========4==============");
 
-		// 메서드의 매개변수의 다형성
-		
-		animalSound(new Dog());		// 메서드 호출
-		animalSound(new Cat());		//
-	}
-	
+		animalSound(new Dog());
+		animalSound(new Cat());
+		}
+
 	public static void animalSound(Animal animal) {
 		animal.sound();
 	}

@@ -1,6 +1,0 @@
-package inheritance.person_2;
-
-public class Engineer {
-
-	private companyId;
-}

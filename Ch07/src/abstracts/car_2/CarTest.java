@@ -1,4 +1,4 @@
-package abstracts.car;
+package abstracts.car_2;
 
 /*
  *	*** 출력 결과 ***
@@ -17,24 +17,28 @@ package abstracts.car;
  * 
  */
 
-public class CarTest {	
+public class CarTest {
 
 	public static void main(String[] args) {
 
-		Bus bus = new Bus();
-		AutoCar autoCar = new AutoCar();
+		Car bus1 = new Bus();
+		Car car1 = new AutoCar();
 		
-		bus.run();		// 객체의 메서드(함수) 호출
-		autoCar.run();
+		bus1.run();
+		car1.run();
 		
-		bus.refuel();
-		autoCar.refuel();
+		bus1.refuel();
+		car1.refuel();
 		
-		bus.takePassenger();
-		autoCar.load();
+		Bus b =(Bus)bus1;
+		b.takePassenger();
+		AutoCar a=(AutoCar)car1;
+		a.load();
 		
-		bus.stop();
-		autoCar.stop();
+		bus1.stop();
+		car1.stop();
+		
+		
 	}
 
 }

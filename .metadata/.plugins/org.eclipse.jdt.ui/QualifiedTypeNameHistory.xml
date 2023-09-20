@@ -17,7 +17,6 @@
     <fullyQualifiedTypeName name="statics.Student"/>
     <fullyQualifiedTypeName name="inheritance.airplane.SuperSonicAirPlane"/>
     <fullyQualifiedTypeName name="customers.VIPCustomer"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="kr.or.iei_2.model.User"/>
     <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
     <fullyQualifiedTypeName name="singleton.student.Student"/>
@@ -37,4 +36,5 @@
     <fullyQualifiedTypeName name="nestedclass.A.C"/>
     <fullyQualifiedTypeName name="nestedclass.interfaces.CallListener"/>
     <fullyQualifiedTypeName name="nestedclass.interfaces.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
