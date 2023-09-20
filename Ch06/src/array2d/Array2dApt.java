@@ -1,6 +1,15 @@
 package array2d;
 
 public class Array2dApt {
+	
+	/*
+	 * 아파트 세대 구현하기
+	 * 1,2,4,5층은 3세대가 있고,
+	 * 3층은 1세대만 있다.
+	 * 
+	 * 2차원 배열을 이용하여 n층 m세대가 나오게 출력하기.
+	 * 
+	*/
 
 	public static void main(String[] args) {
 

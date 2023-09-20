@@ -4,6 +4,15 @@ import java.io.IOException;
 
 public class SchedulerTest {
 
+	/*
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	*/
+	
 	public static void main(String[] args) throws IOException {
 
 		// 인터페이스형으로 다형성 구현

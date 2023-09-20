@@ -34,7 +34,7 @@ public class Member {
 		return false;
 	}
 
-	// 객채의 문자열 정보
+	// 객채의 문자열 정보 - toString() 재정의
 	@Override
 	public String toString() {
 		return memberId + ", "+ name;

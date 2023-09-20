@@ -1,7 +1,16 @@
 package interfaceex.remocon;
 
 public class RemoteControlTest {
-
+	
+	/*
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	*/
+	
 	public static void main(String[] args) {
 
 		// 인터페이스(부모타입)으로 객체 생성 - 자동 형변환.

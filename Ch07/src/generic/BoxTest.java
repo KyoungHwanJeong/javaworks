@@ -1,7 +1,15 @@
 package generic;
 
 public class BoxTest {
-
+	
+	/*
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	*/
+	
 	public static void main(String[] args) {
 
 		// 문자형 타입으로 객체를 생성

@@ -2,6 +2,16 @@ package typinggame;
 
 import java.util.Scanner;
 
+/*
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
 public class TypingGame {
 
 	public static void main(String[] args) {

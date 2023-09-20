@@ -2,6 +2,21 @@ package array2d;
 
 public class Array2dTest1 {
 
+	/*
+	 * 1. 2행 3열의 배열을 선언하고, 행의 크기, 1행의 1열 크기, 1행의 2열크기 출력하기.
+	 * 2. 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
+	
 	public static void main(String[] args) {
 
 		// 정수형 2차원 배열

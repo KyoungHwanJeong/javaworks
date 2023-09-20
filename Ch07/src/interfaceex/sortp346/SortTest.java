@@ -3,7 +3,15 @@ package interfaceex.sortp346;
 import java.io.IOException;
 
 public class SortTest {
-
+	
+	/*
+	*
+	*
+	*
+	*
+	*
+	*/
+	
 	public static void main(String[] args) throws IOException {
 
 		System.out.println("정렬 방식을 선택하세요.");

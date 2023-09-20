@@ -13,7 +13,7 @@ public abstract class Car {
 		System.out.println("시동을 끕니다.");
 	}
 	
-	// 템플릿 메서드 정의 : 상속 받는 클래스에서 수정할 수 있다.
+	// 템플릿 메서드 정의 : 상속 받는 클래스에서 수정할 수 없다.
 	// 반드시 final을 붙여야 한다!
 	public final void run() {
 	

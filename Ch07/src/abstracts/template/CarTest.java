@@ -16,6 +16,16 @@ public class CarTest {
 		
 		Car myCar = new AICar();
 		myCar.run();
+		
+		System.out.println("==========2===================");
+		// final 클래스 체킹
+		String msg = "좋은 하루 되세요!";
+			// String, Integer 같은 기본 클래스들은
+		    // 변하면 안되기 때문에 상속을 못하게 막음.
+		System.out.println(msg);
+		
+		Integer num = 100;
+		System.out.println(num);
 	}
 
 }
