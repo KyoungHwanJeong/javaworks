@@ -7,6 +7,7 @@ package objectequals.hashcode;
  * employee1과 employee2의 힙메모리 영역을 비교하여 출력하고,
  * employee1과 employee2의 equals를 재정의하고 출력하기.
  * 
+ * hashcode의 값을 비교하여 동등 객체인지 출력하기.
  * hashcode를 재정의하고 출력하기.
  * 
 */
