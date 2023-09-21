@@ -11,8 +11,8 @@ public class ExceptionHanding1 {
 		
 		System.out.println("[프로그램 시작]\n");
 		
-		//printLength("지하철");
-		printLength(null);
+		printLength("지하철");
+		printLength(null);			// 에러 발생!
 		
 		System.out.println("[프로그램 종료]\n");
 

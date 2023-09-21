@@ -35,6 +35,9 @@
     <fullyQualifiedTypeName name="nestedclass.A.B"/>
     <fullyQualifiedTypeName name="nestedclass.A.C"/>
     <fullyQualifiedTypeName name="nestedclass.interfaces.CallListener"/>
-    <fullyQualifiedTypeName name="nestedclass.interfaces.Button.OnClickListener"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="nestedclass.student.Student.Score"/>
+    <fullyQualifiedTypeName name="nestedclass.interfaces.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="collection.member.MemberArrayListTest"/>
 </qualifiedTypeNameHistroy>
