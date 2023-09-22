@@ -1,6 +1,6 @@
-package kr.or.iei_2.run;
+package kr.or_2.iei_2.run_2;
 
-import kr.or.iei_2.model.User;
+import kr.or_2.iei_2.model_2.User;
 
 public class UserTest {
 	

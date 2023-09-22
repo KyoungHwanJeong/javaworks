@@ -1,4 +1,4 @@
-package arraylist.score;
+package arraylist.score_2;
 
 /*
  * << 결과 내용 >>
@@ -15,14 +15,13 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// Student 객체 생성
-		Student std = new Student(101, "우영우");
+		Student student1 = new Student(101, "우영우");
+		student1.addSubject("국어", 90);
+		student1.addSubject("수학", 85);
+		student1.addSubject("Java", 82);
 		
-		std.addSubject("국어", 90);
-		std.addSubject("수학", 85);
-		std.addSubject("Java", 82);
+		student1.showStudentInfo();
 		
-		std.showStudentInfo();
 	}
 
 }

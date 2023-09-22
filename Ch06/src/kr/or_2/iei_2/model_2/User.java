@@ -1,4 +1,4 @@
-package kr.or.iei_2.model;
+package kr.or_2.iei_2.model_2;
 
 public class User {
 

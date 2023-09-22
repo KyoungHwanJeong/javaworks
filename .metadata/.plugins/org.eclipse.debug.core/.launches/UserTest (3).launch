@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-        <listEntry value="/Ch06/src/kr/or/iei_2/run/UserTest.java"/>
+        <listEntry value="/Ch06/src/kr/or_2/iei_2/run_2/UserTest.java"/>
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="1"/>
     </listAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
-    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="kr.or.iei_2.run.UserTest"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="kr.or_2.iei_2.run_2.UserTest"/>
     <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="Ch06"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Ch06"/>
 </launchConfiguration>

@@ -1,4 +1,4 @@
-package arraylist.shape;
+package arraylist.shape_2;
 
 import java.util.ArrayList;
 
@@ -21,9 +21,7 @@ import java.util.ArrayList;
  *	향상 for문을 이용하여 list를 출력하기. 
  *  
 */
-
-
-class Shape{
+class Shape {
 	public void draw() {
 		System.out.println("Shape");
 	}
@@ -45,29 +43,27 @@ class Triangle extends Shape{
 		System.out.println("Triangle");
 	}
 	
+	
 }
 
 public class ShapeTest {
 
 	public static void main(String[] args) {
 
-		//ArrayList<자료형> 변수 = new ArrayList<>();
-		ArrayList<Shape> list = new ArrayList<>();
+		ArrayList<Shape> shape = new ArrayList<>();
+		shape.add(new Circle());
+		shape.add(new Triangle());
+		shape.add(new Shape());
+		
+		System.out.println("=======1==================");
 
-		// list에 객체 저장 
-		list.add(new Circle());
-		list.add(new Triangle());
-		list.add(new Shape());
-		
-		
-		for(int i=0;i<list.size();i++) {
-			list.get(i).draw();;
+		for(int i=0;i<shape.size();i++) {
+			shape.get(i).draw();
 		}
 		
-		System.out.println("====================================");
+		System.out.println("=======2==================");
 		
-		// list 출력하기
-		for(Shape s : list) {
+		for(Shape s: shape) {
 			s.draw();
 		}
 	}

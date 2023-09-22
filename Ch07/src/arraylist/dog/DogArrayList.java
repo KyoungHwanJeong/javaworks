@@ -31,9 +31,12 @@ public class DogArrayList {
 		dogList.add(dog2);
 		dogList.add(dog3);
 		
+		System.out.println("=============1====================");
 		// 2번 인덱스 출력
 		System.out.println(dogList.get(2));
 		
+		System.out.println("=============2====================");
+
 		// 전체 조회
 		for(int i =0; i< dogList.size(); i++){
 			Dog dog = dogList.get(i);

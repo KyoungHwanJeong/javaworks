@@ -1,26 +1,25 @@
-package arraylist;
+package arraylist.food;
 
 import java.util.ArrayList;
 
+/*
+ * 객체
+ * carts= "사과", "콩나물", "사과", "커피"
+ * 1. ArrayList로 객체들을 하나 씩 배열에 추가하고 출력하기.
+ * 2. 리스트의 크기를 출력하기.
+ * 3. 마지막에 입력된 "사과"를 "바나나"로 수정하고 출력하기.
+ * 4. "콩나물"을 제거하고 출력하기.
+ * 5. 결과를 향상된 for문으로 다시 출력하기.
+ * 
+ */
+
 public class ArrayListTest1 {
 
-	/*
-	 * 객체
-	 * carts= "사과", "콩나물", "커피", "우유"
-	 * ArrayList로 객체들을 하나 씩 배열에 추가하고 출력하기.
-	 * carts의 크기를 출력하기.
-	 * "사과"를 "바나나"로 수정하고 출력하기.
-	 * "콩나물"을 제거하고 출력하기.
-	 * 결과를 향상된 for문으로 다시 출력하기.
-	 */
-	
-	
-	
 	public static void main(String[] args) {
 
 		//String carts = new String[4];
 		//carts[0]= "사과";
-		//String[] carts = {"사과", "콩나물", "커피", "우유"};
+		//String[] carts = {"사과", "콩나물", "사과", "커피"};
 		//리스트 공간이 기본 10개 생성됨
 		//리스트는 순서가있음(인덱싱, 위치찾기 가능하다)
 		ArrayList<String> carts = new ArrayList<>();
@@ -31,18 +30,19 @@ public class ArrayListTest1 {
 		carts.add("사과");
 		carts.add("커피");
 		
-		
+		System.out.println("================1======================");
+
 		// 자료 출력 - get()
 		System.out.println(carts.get(0));
 		System.out.println(carts.get(1));
 		System.out.println(carts.get(2));
 		System.out.println(carts.get(3));
 
-		System.out.println("================1======================");
+		System.out.println("================2======================");
 		// 리스트의 크기
 		System.out.println("리스트의 크기: " +carts.size());
 		
-		System.out.println("================2=====================");
+		System.out.println("================3=====================");
 		// 자료 수정 - set()
 		carts.set(2, "바나나");
 		
@@ -53,7 +53,7 @@ public class ArrayListTest1 {
 				}
 				
 		System.out.println();
-		System.out.println("================3=====================");
+		System.out.println("================4=====================");
 
 		// 자료 삭제 - remove()
 		carts.remove("콩나물");
@@ -66,7 +66,7 @@ public class ArrayListTest1 {
 
 
 		System.out.println();
-		System.out.println("================4=====================");
+		System.out.println("================5=====================");
 		
 		
 		// 향샹된 for문 - for(자료형 변수: 리스트이름){}
