@@ -1,9 +1,0 @@
-package singleton;
-
-public class Company {
-
-	// 싱그론 코딩 디자인 패턴 사용
-	// 멤버 변수가 객체 인스턴스
-	
-	
-}

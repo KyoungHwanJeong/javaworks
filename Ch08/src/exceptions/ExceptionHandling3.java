@@ -15,7 +15,7 @@ public class ExceptionHandling3 {
 			// ClassNotFoundException = Exception 으로 줄여써도 된다.
 			System.out.println("클래스를 찾을 수 없습니다.");
 			e.printStackTrace();
-		}finally {
+		}finally { // 프로그램 상 항상 실행해야 할 경우에 사용함
 			System.out.println("항상 수행됨");
 		}
 	}

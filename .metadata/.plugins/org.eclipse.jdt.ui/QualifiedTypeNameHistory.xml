@@ -35,6 +35,15 @@
     <fullyQualifiedTypeName name="nestedclass.A.B"/>
     <fullyQualifiedTypeName name="nestedclass.A.C"/>
     <fullyQualifiedTypeName name="nestedclass.interfaces.CallListener"/>
+    <fullyQualifiedTypeName name="nestedclass.student.Student.Score"/>
     <fullyQualifiedTypeName name="nestedclass.interfaces.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="collection.member.MemberArrayListTest"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="arraylist.dog.Dog"/>
+    <fullyQualifiedTypeName name="funcinterface.lambdastring.StringConcatImpl"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="streams.ArraysTest"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
 </qualifiedTypeNameHistroy>
