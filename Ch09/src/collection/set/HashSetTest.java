@@ -18,17 +18,25 @@ public class HashSetTest {
 		set.add("Jsp");
 		set.add("Java");	// 중복데이터이므로 저장이 안됨.
 		
+		System.out.println("============1=======================");
 		// 객체의 수
 		System.out.println("총 객체수: "+ set.size());
 		
+		System.out.println("============2=======================");
+
 		// 특정 객체 출력
+		if(set.contains("Java")) {
+			System.out.println("Java");
+		}
 		
-		
+		System.out.println("============3=======================");
+
 		// 객체 삭제
 		if(set.contains("Jsp")){
 			set.remove("Jsp");
 		}
-		
+
+
 		// 전체 목록 조회
 		// 순서가 없어서 인덱싱을 할 수 없다.(Iterator 클래스를 사용한다)
 		Iterator<String> iterator = set.iterator();
@@ -36,7 +44,9 @@ public class HashSetTest {
 			String element = iterator.next();// 다음 객체가 있으면 가져온다.
 			System.out.println(element);
 		}
-		System.out.println("===================================");
+
+		System.out.println("============4=======================");
+
 		
 		// 전체 조회2
 		for(String element : set) {
