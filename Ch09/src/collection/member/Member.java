@@ -38,7 +38,11 @@ public class Member {
 		return memberId + " : "+ memberName;
 	}
 
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> 2461b60308771f198e809155a52e168f45b9e6e0
 	@Override
 	public int hashCode() {
 		return memberId;
@@ -55,7 +59,11 @@ public class Member {
 		}
 		return false;
 	}
+<<<<<<< HEAD
 */	
+=======
+	
+>>>>>>> 2461b60308771f198e809155a52e168f45b9e6e0
 	
 	
 }
