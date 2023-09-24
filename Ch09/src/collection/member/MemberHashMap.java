@@ -25,12 +25,12 @@ public class MemberHashMap {
 	public void showAllMember() {
 		//인덱싱이 안된다(순서가 없기 때문에...) - 반복자(Iterator)사용
 		Iterator <Integer> ir = hashMap.keySet().iterator();
-		// .keySet = 일치하는 키 값을 반환해준다
-		// .iterator = for 문은 처음부분부터 끝까지 1번 반복하지만
+		// keySet() = 키 집합, 일치하는 키 값을 반환해준다
+		// iterator() = for 문은 처음부분부터 끝까지 1번 반복하지만
 		//					iterator는 처음과 끝 양쪽에서 반대로 반복한다.
 		//                  FIFO, LIFO 구조에서 배운거...
 		
-		while(ir.hasNext()) {	// .hasNext = 객체 수만큼 반복
+		while(ir.hasNext()) {	// hasNext() = 객체 수만큼 반복
 			int key = ir.next();	// 키를 가져와서 key에 저장한다.
 			Member member = hashMap.get(key);// key값을 매개로
 									// 일치하는 멤버 객체를 가져온다.

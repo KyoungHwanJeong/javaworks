@@ -6,7 +6,7 @@ import java.util.List;
 public class LinkedListTest {
 
 	public static void main(String[] args) {
-
+		//Queue 방식- 선입선출(FIFO)
 		List<String> myList = new LinkedList<>();
 		
 		// 자료추가

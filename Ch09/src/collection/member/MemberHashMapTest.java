@@ -16,6 +16,9 @@ public class MemberHashMapTest {
 
 		// 키는 중복이 허용되지 않고, 값은 변경된다.
 		memberMap.addMember(new Member(1002, "우영우"));
+		memberMap.showAllMember();
+
+		System.out.println("=================================");
 
 		System.out.println("총 객체 수: " + memberMap.getSize());
 		
