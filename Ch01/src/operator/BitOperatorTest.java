@@ -22,6 +22,14 @@ public class BitOperatorTest {
 		
 		System.out.println(result1);
 		System.out.println(result2);
+		
+		
+		//비트 이동 연산자
+		// a << 2 - 변수 a를 2비트 만큼 왼쪽으로 이동
+		// a >> 2 - 변수 a를 2비트 만큼 오른쪽으로 이동
+		int a = 10;				// 0000 1010
+		System.out.println(a << 2);		// 0010 1000
+		System.out.println(a >> 2);		// 0000 0010
 	}
 
 }
