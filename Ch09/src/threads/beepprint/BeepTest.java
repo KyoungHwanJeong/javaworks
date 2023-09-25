@@ -14,7 +14,7 @@ public class BeepTest implements Runnable{
 		for(int i=1;i<=5;i++) {
 			toolkit.beep();
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(500);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
