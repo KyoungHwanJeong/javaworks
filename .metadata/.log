@@ -11359,6 +11359,7 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+<<<<<<< HEAD
 !SESSION 2023-09-25 21:05:01.394 -----------------------------------------------
 eclipse.buildId=4.28.0.20230608-1200
 java.version=17.0.8.1
@@ -12773,3 +12774,5 @@ java.io.FileNotFoundException: File C:\Users\user1\.p2\pool\plugins\org.eclipse.
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:196)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:289)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+=======
+>>>>>>> 42123bb94b2c1a4c61c6691362e9827310796873
