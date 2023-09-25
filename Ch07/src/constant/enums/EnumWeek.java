@@ -2,6 +2,18 @@ package constant.enums;
 
 import java.util.Calendar;
 
+/*
+ * 열거형 상수 enum 사용하기
+ * enum- 상수로 만들어진 집합(대문자 사용), private 이고, 
+ * 			생성자를 가질 수 있다.
+ *  
+ * enum의 요소: 일요일 ~ 토요일
+ * 1. 요일을 switch-case문으로 분리하여 오늘의 요일을 출력하기.
+ * 2. 오늘의 요일이 일요일이면 "일요일에는 영화를 보러 갑니다."를 출력하고,
+ * 	나머지 요일이면 "열심히 코딩을 합니다."를 출력한다.
+ * 
+ */
+
 public class EnumWeek {
 
 	public static void main(String[] args) {

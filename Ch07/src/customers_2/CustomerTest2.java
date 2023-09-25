@@ -8,33 +8,32 @@
 	 * 
 	*/
 
-package customers;
+package customers_2;
 
 public class CustomerTest2 {
-	
+
 	public static void main(String[] args) {
 
-		// 부모형으로 객체 생성 - 자동 형변환
+		int price;
+		int cost;
+		
+		System.out.println("===========1===================");
 		
 		Customer lee = new Customer(1001, "이순신");
-		
-		int price =10000;
-		int cost = lee.calcPrice(price);
+		price=10000;
+		cost = lee.calcBonus(price);
 		System.out.println(lee.showCustomerInfo());
-		System.out.println(lee.getCustomerName() 
-				+ "님이 지불할 비용은 "+ cost + "원입니다.");
-		System.out.println("===============================");
+		System.out.println(lee.customerName + "님이 지불할 비용은 "
+					+ cost + "원입니다.");
 		
-		// 부모형으로 객체 생성 - 자동 형변환
+		System.out.println("===========2===================");
+
 		Customer woo = new VIPCustomer(1010, "우영우", 7777);
-		
-		price =20000;
-		cost = woo.calcPrice(price);
-		
+		price=20000;
+		cost = woo.calcBonus(price);
 		System.out.println(woo.showCustomerInfo());
-		System.out.println(woo.getCustomerName() 
-				+ "님이 지불할 비용은 "+ cost + "원입니다.");
-		
+		System.out.println(woo.customerName + "님이 지불할 비용은 "
+					+ cost + "원입니다.");
 	}
 
 }

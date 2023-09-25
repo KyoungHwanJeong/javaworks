@@ -2,6 +2,17 @@ package enums.dates;
 
 import java.util.Calendar;
 
+/*
+ * Calendar 함수
+ * 1. Calendar 함수 출력하기
+ * 2. 년 출력하기
+ * 3. 월 출력하기
+ * 4. 일 출력하기
+ * 5. 요일 출력하기
+ * 6. 시, 분, 초 출력하기
+ * 
+ */
+
 public class CalendarTest {
 
 	public static void main(String[] args) {

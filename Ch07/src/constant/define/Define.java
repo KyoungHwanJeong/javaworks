@@ -1,4 +1,4 @@
-package constant;
+package constant.define;
 
 // 상수만 정의한 클래스
 public class Define {

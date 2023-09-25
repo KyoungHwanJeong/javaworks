@@ -2,19 +2,16 @@ package arraylist;
 
 import java.util.ArrayList;
 
-public class ArrayListTest1 {
+/*
+ * 객체- "사과", "콩나물", "사과", "커피"
+ * 1. ArrayList를 이용하여 객체들을 하나 씩 배열에 추가하고 출력하기.
+ * 2. 리스트의 크기를 출력하기
+ * 3. 배열 3번째의 "사과"를 "바나나"로 수정하고 출력하기.
+ * 4. "콩나물"을 제거하고 출력하기.
+ * 5. 결과를 향상된 for문으로 다시 출력하기.
+ */
 
-	/*
-	 * 객체
-	 * carts= "사과", "콩나물", "커피", "우유"
-	 * ArrayList로 객체들을 하나 씩 배열에 추가하고 출력하기.
-	 * carts의 크기를 출력하기.
-	 * "사과"를 "바나나"로 수정하고 출력하기.
-	 * "콩나물"을 제거하고 출력하기.
-	 * 결과를 향상된 for문으로 다시 출력하기.
-	 */
-	
-	
+public class ArrayListTest1 {
 	
 	public static void main(String[] args) {
 
