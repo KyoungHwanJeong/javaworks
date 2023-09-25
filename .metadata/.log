@@ -6413,6 +6413,7 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+<<<<<<< HEAD
 !SESSION 2023-09-25 09:30:27.808 -----------------------------------------------
 eclipse.buildId=4.28.0.20230608-1200
 java.version=17.0.8.1
@@ -11095,3 +11096,5 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+=======
+>>>>>>> f926b1909883f8c9cfb475c3666e61d76b8f1a0a
