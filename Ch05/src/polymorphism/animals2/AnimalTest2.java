@@ -1,13 +1,13 @@
 package polymorphism.animals2;
 
 
-class Animal{
+class Animal2{
 	public void move() {
 		System.out.println("동물이 움직입니다.");
 	}
 }
 
-class Human extends Animal{
+class Human2 extends Animal2{
 
 	@Override
 	public void move() {
@@ -19,7 +19,7 @@ class Human extends Animal{
 	}
 }
 
-class Tiger extends Animal{
+class Tiger2 extends Animal2{
 
 	@Override
 	public void move() {
@@ -32,7 +32,7 @@ class Tiger extends Animal{
 	
 }
 
-class Eagle extends Animal{
+class Eagle2 extends Animal2{
 
 	@Override
 	public void move() {
@@ -47,8 +47,8 @@ class Eagle extends Animal{
 
 public class AnimalTest2 {
 
-	public void moveAnimal(Animal animal) {
-		animal.move();
+	public void moveAnimal(Animal2 animal2) {
+		animal2.move();
 	}
 	
 	public static void main(String[] args) {
@@ -61,9 +61,9 @@ public class AnimalTest2 {
 		
 		// Animal의 move() 메서드 호출
 		// moveAnimal() 호출
-		aTest.moveAnimal(new Human());
-		aTest.moveAnimal(new Tiger());
-		aTest.moveAnimal(new Eagle());
+		aTest.moveAnimal(new Human2());
+		aTest.moveAnimal(new Tiger2());
+		aTest.moveAnimal(new Eagle2());
 		
 //		Animal[] animals = new Animal[3];		
 //		animals[0] = new Human();
@@ -71,24 +71,24 @@ public class AnimalTest2 {
 	System.out.println("****** 자식형으로 다운 캐스팅 ******");	
 
 	// 크기가 3인 Animal 인스턴스를 저장할 배열 생성
-	Animal[] animals = new Animal[3];
+	Animal2[] animals = new Animal2[3];
 	
 	//자식 객체 생성
-	animals[0] = new Human();
-	animals[1] = new Tiger();
-	animals[2] = new Eagle();
+	animals[0] = new Human2();
+	animals[1] = new Tiger2();
+	animals[2] = new Eagle2();
 	
 							// 배열을 순회하면서
 	for(int i = 0; i< animals.length; i++) {
-		Animal animal = animals[i];	// 0번 인덱스부터 객체를 저장.
-		if(animal instanceof Human) {
-			Human human = (Human)animal; //Human 타입 강제 형변환
+		Animal2 animal = animals[i];	// 0번 인덱스부터 객체를 저장.
+		if(animal instanceof Human2) {
+			Human2 human = (Human2)animal; //Human 타입 강제 형변환
 			human.readBook();
-		}else if(animal instanceof Tiger) {
-			Tiger tiger = (Tiger)animal;//Tiger 타입 강제 형변환
+		}else if(animal instanceof Tiger2) {
+			Tiger2 tiger = (Tiger2)animal;//Tiger 타입 강제 형변환
 			tiger.hunting();
-		}else if(animal instanceof Eagle) {
-			Eagle eagle = (Eagle)animal;//Eagle 타입 강제 형변환
+		}else if(animal instanceof Eagle2) {
+			Eagle2 eagle = (Eagle2)animal;//Eagle 타입 강제 형변환
 			eagle.flying();
 		}else {
 			System.out.println("지원하지 않는 타입입니다.");
