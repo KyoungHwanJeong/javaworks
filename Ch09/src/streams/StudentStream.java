@@ -33,7 +33,7 @@ public class StudentStream {
 		stdStream = list.stream();
 		// map() - 매개변수에 일치(매핑)되는 것을 구현할 때 쓰는 함수
 		//
-		//		- 매개변수의 이름을 다시 모아서 묶어둠(매핑)
+		//		- 매개변수의 이름을 다시 모아서 묶어둠(매핑한다)
 		// 학생 객체에 있는 이름만 출력함
 		stdStream.map(std -> std.getName())
 				.forEach(s -> System.out.println(s));
@@ -43,6 +43,7 @@ public class StudentStream {
 		// 학생 점수에 해당하는 내용만 출력
 		// 정수인 경우 - mapToInt()을 사용한다.
 		stdStream = list.stream();
+					// stream은 반환하고 소멸되기 때문에 한번 더 생성해야 한다.
 		stdStream.mapToInt(std -> std.getScore())
 				 .forEach(n -> System.out.println(n));
 		

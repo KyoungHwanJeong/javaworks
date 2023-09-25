@@ -9,12 +9,19 @@ public class ArraysTest {
 		
 		System.out.println("===========1==================");
 
+		// Stream 인터페이스 - 배열을 쉽고 효율적으로 처리하는 기능
 		Integer[] num1 = {3, 1, 2, 4, 5};
+		// int[] num1 = {3, 1, 2, 4, 5}; // 자료형의 크기: Integer > int
 
 		
 		// 오름차순 정렬 - Arrays,sort()
 		Arrays.sort(num1);
 		System.out.println(Arrays.toString(num1));
+						// toString함수는 객체 모습 그대로 []형식으로 출력해준다.
+		/*
+		for(Integer num: num1)
+			System.out.println(num);
+		*/
 		
 		System.out.println("===========2=================");
 
