@@ -83,7 +83,7 @@ boolean sw = true;
 				System.out.print("계좌 주를 입력하세요(한글, 영문, 숫자): ");
 				String owner= scanner.nextLine();
 				
-				String regExp2 = "^[0-9a-zA-Zㄱ-ㅎ가-힣]$";
+				String regExp2 = "([0-9a-zA-Zㄱ-ㅎ가-힣])";
 				boolean result2 = Pattern.matches(regExp2, owner);
 				if(result2 == false) {
 					System.out.println("계좌 주 형식이 아닙니다.");
@@ -194,10 +194,12 @@ boolean sw = true;
 		while(true) {
 			System.out.println("삭제할 계좌의 계좌 번호를 입력하세요.");
 			String ano2= scanner.nextLine();
+
 			
 			if(findAccount(ano2)!=null) {
 				Account account = findAccount(ano2);
-				System.out.println("삭제하려는 계좌 번호가 " +ano2 + " 이 맞습니까?(맞으면 Y 또는 y 틀리면 N 또는 n를 입력하세요.)");
+				System.out.println("삭제하려는 계좌 번호가 " +ano2 + " 가 맞습니까?(맞으면 Y 또는 y 틀리면 N 또는 n를 입력하세요.)");
+
 				String sign = scanner.nextLine();
 				
 				if(sign.equals("y") || sign.equals("Y")) {
