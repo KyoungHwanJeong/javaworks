@@ -197,7 +197,7 @@ boolean sw = true;
 			
 			if(findAccount(ano2)!=null) {
 				Account account = findAccount(ano2);
-				System.out.println("삭제하려는 계좌가" +ano2 + "계좌가 맞습니까?(맞으면 Y/y 틀리면 N/n를 입력하세요.)");
+				System.out.println("삭제하려는 계좌 번호가 " +ano2 + " 이 맞습니까?(맞으면 Y 또는 y 틀리면 N 또는 n를 입력하세요.)");
 				String sign = scanner.nextLine();
 				
 				if(sign.equals("y") || sign.equals("Y")) {
@@ -208,8 +208,8 @@ boolean sw = true;
 					System.out.println("삭제가 취소되었습니다.");
 					break;
 				}else {
+					System.out.println("-----------------------------");
 					System.out.println("잘못된 문자를 입력하셨습니다.");
-					System.out.println("삭제하려는 계좌가" +ano2 + "계좌가 맞습니까?(맞으면 Y/y 틀리면 N/n를 입력하세요.)");
 		
 				}
 				
