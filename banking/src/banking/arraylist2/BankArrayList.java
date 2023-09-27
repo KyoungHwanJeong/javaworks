@@ -197,8 +197,21 @@ boolean sw = true;
 			
 			if(findAccount(ano2)!=null) {
 				Account account = findAccount(ano2);
-				accountList.remove(account);
-				break;
+				System.out.println("삭제하려는 계좌가" +ano2 + "계좌가 맞습니까?(맞으면 Y/y 틀리면 N/n를 입력하세요.)");
+				String sign = scanner.nextLine();
+				
+				if(sign.equals("y") || sign.equals("Y")) {
+					accountList.remove(account);
+					System.out.println("계좌가 삭제 되었습니다.");
+					break;
+				}else if(sign.equals("n") || sign.equals("N")){
+					System.out.println("삭제가 취소되었습니다.");
+					break;
+				}else {
+					System.out.println("잘못된 문자를 입력하셨습니다.");
+					System.out.println("삭제하려는 계좌가" +ano2 + "계좌가 맞습니까?(맞으면 Y/y 틀리면 N/n를 입력하세요.)");
+		
+				}
 				
 			}else {
 				System.out.println("삭제 할 계좌가 없습니다.");
