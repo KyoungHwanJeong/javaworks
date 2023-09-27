@@ -1,4 +1,4 @@
-package banking.arraylist;
+package banking.arraylist2;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -80,9 +80,15 @@ boolean sw = true;
 				System.out.println("이미 등록된 계좌 입니다. 다시 입력해주세요.");
 			}	// 중복 계좌가 없으면
 			else {
-				System.out.print("계좌 주를 입력하세요: ");
+				System.out.print("계좌 주를 입력하세요(한글, 숫자): ");
 				String owner= scanner.nextLine();
 				
+				String regExp2 = "([가-힣])";
+				boolean result2 = Pattern.matches(regExp2, owner);
+				if(result2 == false) {
+					System.out.println("계좌 주 형식이 아닙니다.");
+					break;
+				}else {
 				
 				System.out.print("초기 입금액을 입력하세요: ");
 				
@@ -96,7 +102,7 @@ boolean sw = true;
 
 				break;
 				
-				
+				}
 				}
 			}
 		
