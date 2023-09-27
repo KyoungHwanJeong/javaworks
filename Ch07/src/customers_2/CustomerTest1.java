@@ -23,13 +23,13 @@ public class CustomerTest1 {
 		int price;
 		Customer lee = new Customer(1001, "이순신");
 		price=10000;
-		lee.calcBonus(price);
+		lee.calcPrice(price);
 		
 		System.out.println(lee.showCustomerInfo());
 		
 		Customer woo = new VIPCustomer(1010, "우영우", 7777);
 		price=20000;
-		woo.calcBonus(price);
+		woo.calcPrice(price);
 		
 		System.out.println(woo.showCustomerInfo());
 	}

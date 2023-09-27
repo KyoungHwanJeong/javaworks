@@ -38,7 +38,7 @@ public class TypingGame {
 			String question = words[rand];
 			System.out.println(question);	// 출제된 단어
 			//단어 입력
-			String answer = sc.nextLine();	// 사용자 입력
+			String answer = sc.nextLine();	// 사용자가 입력한 단어
 			
 			if(question.equals(answer)) {
 				System.out.println("통과!");

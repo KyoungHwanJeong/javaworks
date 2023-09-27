@@ -36,7 +36,7 @@ public class Customer {
 		return customerName;
 	}
 	
-	public int calcBonus(int price) {
+	public int calcPrice(int price) {
 		bonusPoint +=(int)(price*bonusRatio);
 		return price;
 	}

@@ -16,6 +16,7 @@ public class WriteExample1 {
 			
 			// 2. 배열 쓰기
 			char[] arr = {'C', 'D', 'E'};
+			
 						
 			// 3. 문자열 쓰기
 			String str ="안녕하세요";

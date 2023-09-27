@@ -13,6 +13,7 @@ public class FileCopyTest {
 		String orignFile= "C:/File/img1.webp";	//원본 파일
 		String copyFile= "C:/File/img2.webp";	//사본 파일
 		
+		
 		try {
 			InputStream is = new FileInputStream(orignFile);
 			OutputStream os = new FileOutputStream(copyFile);

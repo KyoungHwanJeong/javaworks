@@ -16,7 +16,7 @@ public class WriteExample2 {
 			// 배열의 모든 바이트를 쓰기
 			os.write(array);
 			
-			os.flush();
+			os.flush();			// 버퍼를 비워준다.
 			os.close();
 			
 			

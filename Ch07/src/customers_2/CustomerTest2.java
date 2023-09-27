@@ -21,7 +21,7 @@ public class CustomerTest2 {
 		
 		Customer lee = new Customer(1001, "이순신");
 		price=10000;
-		cost = lee.calcBonus(price);
+		cost = lee.calcPrice(price);
 		System.out.println(lee.showCustomerInfo());
 		System.out.println(lee.customerName + "님이 지불할 비용은 "
 					+ cost + "원입니다.");
@@ -30,7 +30,7 @@ public class CustomerTest2 {
 
 		Customer woo = new VIPCustomer(1010, "우영우", 7777);
 		price=20000;
-		cost = woo.calcBonus(price);
+		cost = woo.calcPrice(price);
 		System.out.println(woo.showCustomerInfo());
 		System.out.println(woo.customerName + "님이 지불할 비용은 "
 					+ cost + "원입니다.");

@@ -1,7 +1,3 @@
-package customers;
-
-import java.util.ArrayList;
-
 /*
  * 객체 일반 고객- 고객id: 10010, 이름: 이순신, 
  * 				고객id: 10020, 이름: 신사임당,
@@ -29,6 +25,10 @@ import java.util.ArrayList;
  *  가 들어가 있다.
  * 
 */
+
+package customers;
+
+import java.util.ArrayList;
 
 public class CustomerArrayList {
 
