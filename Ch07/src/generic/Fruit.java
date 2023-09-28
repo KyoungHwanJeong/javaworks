@@ -4,7 +4,7 @@ public class Fruit {
 
 	String name;	// 과일 이름
 	
-	Fruit(String name){
+	public Fruit(String name){
 		this.name = name;
 	}
 

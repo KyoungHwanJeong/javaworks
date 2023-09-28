@@ -1,21 +1,23 @@
+/*
+ * ArrayList로 코드 작성하기.
+ * 1. ArrayList 배열에 "egg"와 "coffee"를 순서대로 저장하고,
+ * 배열의 0번째를 출력하기.
+ * 
+ * 제너릭을 사용해서 코드 작성하기.
+ * 1. 제너릭 프로그래밍으로 "egg"와 "coffee"를 순서대로 저장하고,
+ * 배열의 0번째를 출력하기.
+ * 
+*/
+
 package generic;
 
 import java.util.ArrayList;
 
-/*
- * 
- * 
- * 
- * 
- * 
- * 
- * 
-*/
-
-
 public class GenericTest {
 
 	public static void main(String[] args) {
+
+		System.out.println("============1===================");
 
 		// Generic(일반화) 이전의 코드 작성
 		ArrayList cartlist = new ArrayList();
@@ -26,7 +28,7 @@ public class GenericTest {
 		String item = (String)cartlist.get(0);
 		System.out.println(item);
 		
-		System.out.println("============1===================");
+		System.out.println("============2===================");
 		
 		// Generic을 이용한 코드 작성 - 자바 1.5버전 이후
 		/*

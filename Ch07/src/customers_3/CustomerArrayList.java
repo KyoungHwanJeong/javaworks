@@ -9,9 +9,11 @@
  * 
  * Customer 클래스(SILVER 등급) : 고객 아이디, 고객 이름, 고객 등급,
  *  					보너스 포인트, 보너스 적립율(1%)
- * Gold 클래스(Gold 등급) : 고객 아이디, 고객 이름, 고객 등급(Gold), 구매 할인율(10%),
+ * Gold 클래스(Gold 등급) : 고객 아이디, 고객 이름, 고객 등급(Gold),
+ * 						 구매 할인율(10%),
  * 						보너스 포인트, 보너스 적립율(2%)
- * VIP 클래스(VIP 등급) : 고객 아이디, 고객 이름, 고객 등급(VIP), 구매 할인율(10%),
+ * VIP 클래스(VIP 등급) : 고객 아이디, 고객 이름, 고객 등급(VIP),
+ * 						 구매 할인율(10%),
  * 						보너스 포인트, 보너스 적립율(5%)
  * 
  *	// 구매 가격은 가격 - (가격*구매 할인율)로 계산한다.
@@ -28,10 +30,30 @@
 
 package customers_3;
 
+import java.util.ArrayList;
+
 public class CustomerArrayList {
 
 	public static void main(String[] args) {
 
+		ArrayList<Customer> List= new ArrayList<>();
+		
+		List.add(new Customer(10010, "이순신"));
+		List.add(new Customer(10020, "신사임당"));
+		List.add(new GoldCustomer(10030, "홍길동"));
+		List.add(new GoldCustomer(10040, "이율곡"));
+		List.add(new VIPCustomer(10050, "세종대왕", 7777));
+		
+		int price = 10000;
+		
+		for(int i=0;i<List.size();i++) {
+			//Customer customer= List.get(i);
+			int pay = List.get(i).calcPrice(price);
+			System.out.println(List.get(i).customerName +
+					"님이 지불할 비용은 " + pay + "원 입니다.");
+			System.out.println(List.get(i).showCustomerInfo());
+		}
+		
 		
 	}
 
