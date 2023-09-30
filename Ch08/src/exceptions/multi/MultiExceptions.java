@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.multi;
 
 public class MultiExceptions {
 

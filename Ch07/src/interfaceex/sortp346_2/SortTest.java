@@ -33,34 +33,34 @@
  * 
  */
 
-package interfaceex.sortp346;
+package interfaceex.sortp346_2;
 
 import java.io.IOException;
 
 public class SortTest {
-	
+
 	public static void main(String[] args) throws IOException {
 
 		System.out.println("정렬 방식을 선택하세요.");
-		System.out.println("B: BubbleSort");
-		System.out.println("H: HeapSort");
-		System.out.println("Q: QuickSort");
+		System.out.println("B 또는 b: BubbleSort");
+		System.out.println("H 또는 h: HeapSort");
+		System.out.println("Q 또는 q: QuickSort");
 		
-		int ch = System.in.read();
-		Sort sort = null;
+		int ch=System.in.read();
+		Sort sort=null;
 		
 		if(ch=='B'||ch=='b') {
-			sort = new BubbleSort();
-		}else if(ch=='H' || ch=='h') {
-			sort = new HeapSort();
-		}else if(ch=='Q' || ch=='q') {
-			sort = new QuickSort();
+			sort=new BubbleSort();
+		}else if(ch=='H'||ch=='h') {
+			sort=new HeapSort();
+		}else if(ch=='Q'||ch=='q') {
+			sort=new QuickSort();
 		}else {
-			System.out.println("지원하지 않는 기능입니다.");
+			System.out.println("잘못된 입력입니다.");
 			return;
 		}
 		
-		int[] arr = new int[10];
+		int arr[] = new int[10];
 		sort.ascending(arr);
 		sort.descending(arr);
 		sort.description();

@@ -5,27 +5,23 @@
  * 
 */
 
-package arraytest;
+package arraytest_2;
 
 public class ArrayTest {
-
+	
 	public static int add(int[] arr) {
-		int sum = 0;
-		for(int i = 0;i< arr.length;i++) {
-			sum += arr[i];
+		int sum=0;
+		for(int i=0;i<arr.length;i++) {
+			sum+=arr[i];
 		}
 		return sum;
 	}
-	
-	
+
 	public static void main(String[] args) {
 
-		int[] numbers = {1,2,3,4};
+		int[] arr= {1,2,3,4};
+		System.out.println("배열 안에 있는 숫자들의 합은: " + add(arr));
 		
-		add(numbers);
-		int result = add(numbers);	// add() 함수 호출 할 때 매개변수로
-									// 배열을 전달한다.
-		System.out.println(result);
 	}
 
 }

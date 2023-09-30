@@ -6,7 +6,7 @@
  * 
 */
 
-package arraytest;
+package arraytest_2;
 
 public class ArrayTest2 {
 
@@ -15,14 +15,20 @@ public class ArrayTest2 {
 		int[] arr1 = {1,2,3};
 		int[] arr2 = new int[5];
 		
-		// 배열 복사
 		for(int i=0;i<arr1.length;i++) {
-			arr2[i] = arr1[i];
+			arr2[i]=arr1[i];
 		}
-		// 인덱스에 값을 저장한다.
-		arr2[1] = 5;	// 값을 수정.
-		arr2[3] = 4;
-		//arr2[5] = 6;	// 에러. 배열의 크기를 초과해서 에러남.
+		System.out.println("=========1===================");
+		
+		for(int i=0;i<arr2.length;i++) {
+			System.out.print(arr2[i] + " ");
+		}
+		
+		System.out.println();
+		System.out.println("=========2===================");
+
+		arr2[1]=5;
+		arr2[3]=4;
 		
 		for(int i=0;i<arr2.length;i++) {
 			System.out.print(arr2[i] + " ");

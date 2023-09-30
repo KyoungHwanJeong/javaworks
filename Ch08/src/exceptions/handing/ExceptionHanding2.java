@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.handing;
 
 public class ExceptionHanding2 {
 
