@@ -32,30 +32,25 @@
  * 
 */
 
-package interfaceex.remocon2;
+package interfaceex.remocon2_2;
 
 public class SmartTVTest {
 
 	public static void main(String[] args) {
 
-		// 구현 객체(인스턴스) - tv
-		SmartTV tv= new SmartTV(); // 부모타입
+		SmartTV tv2 = new SmartTV();
+	
+		RemoteControl rc2= tv2;
+		Searchable s2= tv2;
 		
-		// 구현 인스턴스를 인터페이스 타입에 저장(자동 형변환)
-		RemoteControl rc = tv;
-		Searchable searchable = tv;
-		
-		rc.turnOn();
-		rc.setVolume(8);
-		searchable.search("www.naver.com");
-		searchable.read("www.naver.com");
-		
-		rc.setMute(true);
-		rc.turnOff();
-		
+		rc2.tvTurnOn();
+		rc2.setVolume(8);
+		s2.searchUrl("www.naver.com");
+		s2.readUrl("www.naver.com");
+		rc2.setMute(true);
+		rc2.tvTurnOff();
+	
 		RemoteControl.changeBattery();
-		
-		
 	}
 
 }

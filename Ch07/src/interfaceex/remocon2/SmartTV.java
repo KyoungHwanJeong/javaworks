@@ -1,7 +1,5 @@
 package interfaceex.remocon2;
 
-import interfaceex.remocon.RemoteControl;
-
 // 다중 인터페이스 구현
 public class SmartTV implements RemoteControl, Searchable{
 

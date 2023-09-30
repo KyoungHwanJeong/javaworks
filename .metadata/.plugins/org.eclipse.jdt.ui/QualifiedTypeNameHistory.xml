@@ -16,4 +16,7 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="customers_3.Customer"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon_2.RemoteControlTest"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon_2.RemoteControl"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon2_2.RemoteControl"/>
 </qualifiedTypeNameHistroy>
