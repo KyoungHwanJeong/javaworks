@@ -7,7 +7,7 @@ public class Button {
 	
 	// 내부 인터페이스
 	interface OnClickListener{
-		public void onClick();
+		public void onClick();		// 추상 메서드
 		
 	}
 	

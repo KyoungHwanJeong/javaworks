@@ -29,65 +29,47 @@
  * 
 */
 
-package nestedclass.interfaces;
+package nestedclass.interfaces_2;
 
 public class ButtonTest {
 
 	public static void main(String[] args) {
 
-		//버튼 객체 생성
-		Button button = new Button();
+		Button button1 = new Button();
 		
-		System.out.println("=============1======================");
+		System.out.println("===========1====================");
+		
+		CallListener call1 = new CallListener();
+		button1.setListener(call1);
+		button1.touch();
+		
+		System.out.println("===========2====================");
 
-		// 전화걸기 객체 생성
-		CallListener call = new CallListener();
+		button1.setListener(new MessageListener());
+		button1.touch();
 		
-		button.setListener(call);
-		button.touch();
-		
-		
-		System.out.println("=============2======================");
+		System.out.println("===========3====================");
 
-		// 문자보내기 구현
-		//MessageListener listen = new MessageListener();
 		
-		//button.setListener(listen);
-		//button.touch();
-		
-		button.setListener(new MessageListener());	// 익명 객체 구현
-		button.touch();
-		
-		
-		System.out.println("=============3======================");
-
-		// 사진찍기 구현(익명 클래스로 구현하기)
-		// - 구현 클래스를 만들지 않고 익명 객체로 구현
-		button.setListener(new Button.OnClickListener() {
+		button1.setListener(new Button.OnClickListener() {
 			
 			@Override
 			public void onClick() {
-
 				System.out.println("사진을 찍습니다.");
 			}
 		});
+		button1.touch();
 		
-		button.touch();
-		
-		System.out.println("=============4======================");
+		System.out.println("===========4====================");
 
-		// 쇼핑 - 구매 구현
-		button.setListener(new Button.OnClickListener() {
+		button1.setListener(new Button.OnClickListener() {
 			
 			@Override
 			public void onClick() {
-				
 				System.out.println("상품을 구매합니다.");
 			}
 		});
-
-		button.touch();
-
+		button1.touch();
 	}
 
 }
