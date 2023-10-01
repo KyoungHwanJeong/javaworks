@@ -1,9 +1,16 @@
+/*
+ * 중첩 인터페이스 구현하기.
+ * 
+ * 
+*/
+
 package nestedclass.interfaces;
 
 public class ButtonTest {
 
 	public static void main(String[] args) {
 
+		System.out.println("=============1======================");
 		//버튼 객체 생성
 		Button button = new Button();
 		
@@ -13,6 +20,9 @@ public class ButtonTest {
 		button.setListener(call);
 		button.touch();
 		
+		
+		System.out.println("=============2======================");
+
 		// 문자보내기 구현
 		//MessageListener listen = new MessageListener();
 		
@@ -23,6 +33,8 @@ public class ButtonTest {
 		button.touch();
 		
 		
+		System.out.println("=============3======================");
+
 		// 사진찍기 구현(익명 개체로 구현하기)
 		// - 구현 클래스를 만들지 않고 익명 객체로 구현
 		button.setListener(new Button.OnClickListener() {
@@ -36,7 +48,8 @@ public class ButtonTest {
 		
 		button.touch();
 		
-		
+		System.out.println("=============4======================");
+
 		// 쇼핑 - 구매 구현
 		button.setListener(new Button.OnClickListener() {
 			

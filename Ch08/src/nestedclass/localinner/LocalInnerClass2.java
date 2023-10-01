@@ -1,3 +1,10 @@
+/*
+ * 익명 클래스 사용하기.
+ * 1. LocalInnerClass를 익명 클래스로 구현하기.
+ * 
+ * 
+*/
+
 package nestedclass.localinner;
 
 class Out{
@@ -11,6 +18,7 @@ class Out{
 		int localNum = 20;
 		@Override
 		public void run() {
+			localNum = 30;
 			System.out.println(outNum + "(외부클래스의 인스턴스 변수)");
 			System.out.println(sNum + "(외부클래스의 정적 변수)");
 			System.out.println(localNum + "(내부클래스의 멤버 변수)");
@@ -20,7 +28,7 @@ class Out{
 	
 }
 
-public class LoclaInnerClass2 {
+public class LocalInnerClass2 {
 
 	public static void main(String[] args) {
 

@@ -19,4 +19,5 @@
     <fullyQualifiedTypeName name="interfaceex.remocon_2.RemoteControl"/>
     <fullyQualifiedTypeName name="interfaceex.remocon2_2.RemoteControl"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="nestedclass.student_2.Student.Score"/>
 </qualifiedTypeNameHistroy>
