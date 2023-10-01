@@ -1,3 +1,13 @@
+/*
+ * 예외처리하기
+ * 1. 예외가 발생할 수 있는 부분을 try-catch 문으로 처리하기.
+ * 2. null문자 예외는 NullPointerException을 쓴다.
+ * 3. 에러 메시지 출력에는 e.getMessage 메서드 또는 e.printStackTrace
+ *  메서드를 쓴다.
+ * 
+ * 
+*/
+
 package exceptions.handing;
 
 public class ExceptionHanding2 {

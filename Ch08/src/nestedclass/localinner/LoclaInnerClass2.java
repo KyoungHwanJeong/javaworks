@@ -1,4 +1,4 @@
-package nestedclass;
+package nestedclass.localinner;
 
 class Out{
 	int outNum = 100;

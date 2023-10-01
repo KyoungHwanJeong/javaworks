@@ -1,4 +1,4 @@
-package interfaceex2;
+package interfaceex_2;
 
 public class Car2 {
 

@@ -1,4 +1,4 @@
-package interfaceex2;
+package interfaceex_2;
 
 public class CarMain {
 
@@ -19,13 +19,18 @@ public class CarMain {
 		myCar.frontRight_Tire = kum2;
 		*/
 		
+		myCar.run();
+		
+		System.out.println("============2=======================");
+
+		
 		myCar.frontLeft_Tire = new KumTire();
 		myCar.frontRight_Tire = new KumTire();
 		
 		myCar.run();
 		
 		
-		System.out.println("============2=======================");
+		System.out.println("============3=======================");
 		
 		
 		Car2 myCar2 = new Car2();

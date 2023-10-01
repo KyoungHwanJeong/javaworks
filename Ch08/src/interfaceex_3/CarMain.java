@@ -22,49 +22,31 @@
  * 
 */
 
-package interfaceex;
+package interfaceex_3;
 
 public class CarMain {
 
 	public static void main(String[] args) {
 
-
-		Car myCar = new Car();
-		
-		//myCar.run();
-		
-		// 앞바퀴 교체(데이터 수정)
-		/*
-		KumTire kum1 = new KumTire();
-		KumTire kum2 = new KumTire();
-		
-		myCar.frontLeft_Tire = kum1;
-		myCar.frontRight_Tire = kum2;
-		*/
+		Car car1 = new Car();
+		System.out.println("==========1================");
 	
-		System.out.println("============1=======================");
+		car1.run();
+		
+		System.out.println("==========2================");
+	
+		car1.frontLeft_Tire= new KumTire();
+		car1.frontRight_Tire= new KumTire();
+		
+		car1.run();
+		
+		System.out.println("==========3================");
 
-		
-		myCar.run();
-		
-		System.out.println("============2=======================");
-
-		myCar.frontLeft_Tire = new KumTire();
-		myCar.frontRight_Tire = new KumTire();
-		
-		myCar.run();
-		
-		
-		System.out.println("============3=======================");
-		
-		
-		Car2 myCar2 = new Car2();
-		
-		// 앞바퀴 교체(변경)
-		myCar2.tires[0] = new KumTire();
-		myCar2.tires[1] = new KumTire();
-
-		myCar2.run();
+		Car2 car2 = new Car2();
+		car2.tires[0]=new KumTire();
+		car2.tires[1]=new KumTire();
+		car2.run();
+	
 	}
 
 }

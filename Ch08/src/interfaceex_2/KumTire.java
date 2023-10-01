@@ -1,4 +1,4 @@
-package interfaceex2;
+package interfaceex_2;
 
 // Tire 인터페이스를 구현한 클래스(구현 클래스) - kumTire
 public class KumTire implements Tire{

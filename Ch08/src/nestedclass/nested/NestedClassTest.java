@@ -1,4 +1,4 @@
-package nestedclass;
+package nestedclass.nested;
 
 
 

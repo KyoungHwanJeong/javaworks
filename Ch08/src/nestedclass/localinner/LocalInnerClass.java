@@ -1,4 +1,4 @@
-package nestedclass;
+package nestedclass.localinner;
 
 // 지역 내부 클래스
 class Outer{
