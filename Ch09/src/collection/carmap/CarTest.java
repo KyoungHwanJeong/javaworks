@@ -1,3 +1,9 @@
+/*
+ * 싱글톤 패턴, HashMap 활용하기.
+ * 
+ * 
+ */
+
 package collection.carmap;
 
 public class CarTest {

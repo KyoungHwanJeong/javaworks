@@ -1,26 +1,28 @@
-package collection.set;
+package collection.hashset;
 
 public class Student {
 
 	String name;
-	int age;
+	int stuId;
 	
-	public Student(String name, int age) {
+	public Student(String name, int stuId) {
 		this.name = name;
-		this.age = age;
+		this.stuId = stuId;
 	}
 
+	
 	@Override
 	public String toString() {
-		return name + " : " + age;
+		return name + ":" + stuId;
 	}
-/*
+	
+
 	@Override
 	public int hashCode() {
 		return name.hashCode();
 	}
-*/
-/*
+
+
 	@Override
 	public boolean equals(Object obj) {
 		if(obj instanceof Student) {
@@ -33,7 +35,7 @@ public class Student {
 		return false;
 	}
 
-*/	
+	
 	
 	
 }
