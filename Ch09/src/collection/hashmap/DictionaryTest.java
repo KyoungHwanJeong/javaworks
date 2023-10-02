@@ -1,3 +1,10 @@
+/*
+ * HashMaip 활용하기.
+ * 
+ * 
+ * 
+*/
+
 package collection.hashmap;
 
 import java.util.HashMap;

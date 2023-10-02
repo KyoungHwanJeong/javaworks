@@ -21,45 +21,40 @@
  * 
 */
 
-package collection.member;
+package collection.member_2;
 
 public class MemberHashMapTest {
 
 	public static void main(String[] args) {
 
-		MemberHashMap memberMap = new MemberHashMap();
+		MemberHashMap hashMap= new MemberHashMap();
 		
-		System.out.println("=============1====================");
-
-		// 회원 추가
-		memberMap.addMember(new Member(1001, "이순신"));
-		memberMap.addMember(new Member(1002, "양만춘"));
-		memberMap.addMember(new Member(1003, "을지문덕"));
-		memberMap.showAllMember();
+		System.out.println("============1==================");
+		hashMap.addMember(new Member(1001, "이순신"));
+		hashMap.addMember(new Member(1002, "양만춘"));
+		hashMap.addMember(new Member(1003, "을지문덕"));
 		
-		System.out.println("=============2====================");
-
-		// 키는 중복이 허용되지 않고, 값은 변경된다.
-		memberMap.addMember(new Member(1002, "우영우"));
-		memberMap.showAllMember();
-
-		System.out.println("=============3===================");
-
-		System.out.println("총 객체 수: " + memberMap.getSize());
+		hashMap.showAllMember();
 		
-		System.out.println("=============4===================");
-
-		// 회원 삭제
-		memberMap.removeMember(1003);
-		memberMap.removeMember(1004);
+		System.out.println("============2==================");
+		hashMap.addMember(new Member(1002, "우영우"));
 		
+		hashMap.showAllMember();
 		
-		System.out.println("총 객체 수: " + memberMap.getSize());
+		System.out.println("============3==================");
+		System.out.println("총 회원 수: " + hashMap.allMember());
+		
+		System.out.println("============4==================");
+		
+		hashMap.removeMember(1003);
+		hashMap.removeMember(1004);
+		System.out.println("총 회원 수: " + hashMap.allMember());
+		
+		System.out.println("============5==================");
+		hashMap.showAllMember();
+		
 
-		System.out.println("=============5===================");
-
-		// 회원 목록 출력
-		memberMap.showAllMember();
+		
 	}
 
 }

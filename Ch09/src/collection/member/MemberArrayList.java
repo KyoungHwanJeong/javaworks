@@ -15,7 +15,7 @@ public class MemberArrayList {
 	}
 	
 	// 회원 추가
-	public void addMember(Member member) {
+	public void addMember(Member member) {	// Member 객체
 		arrayList.add(member);
 	}
 
@@ -27,20 +27,18 @@ public class MemberArrayList {
 		}
 	}
 	
-	// 회원의 전체 인원
+	// 회원의 전체 인원(회원 수)
 	public int getSize() {
 		return arrayList.size();
 	}
 	
 	// 회원 삭제
-	// 이미 등록된 회원번호와 매개변수로 전달 받은 회원 아이디를
-	// 비교해서 있으면 삭제한다.
+	// 이미 등록된 회원번호를 가져와서
+	// 매개변수로 전달 받은 회원 아이디를 비교해서 있으면 삭제한다.
 	public boolean removeMember(int memberId) {
-		
 		for(int i=0;i<arrayList.size();i++) {
-			int dbId = arrayList.get(i).getMemberId();
-							// 이미 등록된 회원번호
-					// 외부 아이디와 비교해서 일치하면
+			int dbId = arrayList.get(i).getMemberId(); // 이미 등록된 회원번호
+			// 외부 아이디와 비교해서 일치하면
 			if(dbId == memberId) {
 				arrayList.remove(i);// member 객체를 삭제함
 				System.out.println(memberId +"번 고객이 삭제 되었습니다.");

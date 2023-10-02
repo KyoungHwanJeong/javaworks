@@ -1,3 +1,9 @@
+/*
+ * 멀티 제네릭 활용하기. 
+ * 
+ * 
+*/
+
 package generic;
 
 public class ProductTest {
