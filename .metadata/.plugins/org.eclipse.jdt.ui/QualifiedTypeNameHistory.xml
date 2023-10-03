@@ -22,4 +22,5 @@
     <fullyQualifiedTypeName name="nestedclass.student_2.Student.Score"/>
     <fullyQualifiedTypeName name="nestedclass.interfaces_2.Button.OnClickListener"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
 </qualifiedTypeNameHistroy>

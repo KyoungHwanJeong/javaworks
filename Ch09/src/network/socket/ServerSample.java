@@ -1,3 +1,15 @@
+/*
+ * ServerSocket 생성과 연결 수락.
+ * 1. ServerSocket 생성과 포트 바인딩.
+ * 2. 연결 수락.
+ * 3. 연결된 클라이언트 IP 주소 얻기.
+ * 4. 연결 끊기.
+ * 
+ * 
+ * 
+ * 
+*/
+
 package network.socket;
 
 import java.io.IOException;

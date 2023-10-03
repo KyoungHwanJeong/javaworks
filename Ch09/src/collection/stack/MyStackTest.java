@@ -1,3 +1,11 @@
+/*
+ * stack 활용하기.
+ * MyStack
+ * 
+ * 
+ * 
+*/
+
 package collection.stack;
 
 public class MyStackTest {
