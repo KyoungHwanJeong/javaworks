@@ -16,7 +16,7 @@ public class Data_Input_Output_StreamTest {
 		// 정수, 실수, 문자열 쓰기
 		
 		try (OutputStream os = new FileOutputStream("./data.db");){
-			// 기반 스트림 객체 생성(상대 경로)
+			// 기반 스트림 객체 생성(상대 경로), 지금은 FileOutputStream 기반.
 			//OutputStream os = new FileOutputStream("./data.db");
 										// ./ 는 같은 위치를 의미한다.(생략 가능함)
 			
@@ -51,9 +51,9 @@ public class Data_Input_Output_StreamTest {
 			for(int i=0;i<2;i++) {		// 데이터 수만큼 반복
 				
 				int num = dis.readInt();	// 데이터를 쓴 순서대로 읽어야 한다.
-				String name = dis.readUTF();
+				String name = dis.readUTF();// 문자만(를) 읽어서 name에 저장.
 				
-				double score = dis.readDouble();
+				double score = dis.readDouble();	// 숫자를 읽어서 score에 저장.
 				System.out.println(num + " / " + name + " / " + score);
 			}
 			

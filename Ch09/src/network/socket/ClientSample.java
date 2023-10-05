@@ -10,12 +10,15 @@ public class ClientSample {
 
 		//Socket 객체 생성
 		try {
-			// Socket 객체 생성 및 연결 요청
+			// Socket 객체 생성 및 연결 요청(서버 컴퓨터, 포트번호)
 			Socket socket = new Socket("localhost", 50001);
 			System.out.println("[클라이언트] 연결 성공");
 			
 			socket.close();
 			System.out.println("[클라이언트] 연결 끊음");
+			
+			
+			
 			
 		} catch (UnknownHostException e) {
 			e.printStackTrace();

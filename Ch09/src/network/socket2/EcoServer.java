@@ -27,8 +27,8 @@ public class EcoServer {
 		Scanner scanner = new Scanner(System.in);
 		while(true) {
 			String key = scanner.nextLine();
-			if(key.toLowerCase().equals("q") 
-					|| key.toLowerCase().equals("Q")) break;
+			if(key.toLowerCase().equals("q")) // toLowerCase 대문자 -> 소문자로
+					 break;
 		}
 		
 		
@@ -66,11 +66,14 @@ public class EcoServer {
 					//클라이언트가 보낸 데이터 받기
 					InputStream is = socket.getInputStream();
 					byte[] bytes = new byte[1024];	// 데이터를 저장할 배열 선언
-					int readBytes = is.read(bytes);
+					int readBytes = is.read(bytes);	// 데이터를 읽은 바이트 수
+					
 					
 					
 					//데이터를 문자열로 생성 - 디코딩
 					String message = new String(bytes,0,readBytes, "utf-8");
+					//String​(byte[] bytes, int offset, int length, String charsetName)
+					//String지정된 문자 세트를 사용하여 지정된 바이트 하위 배열을 디코딩하여 새 항목을 생성합니다 .
 					
 					
 					// 받은 데이터 보내기

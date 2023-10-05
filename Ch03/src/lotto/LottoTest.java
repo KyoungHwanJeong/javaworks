@@ -1,5 +1,8 @@
 package lotto;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class LottoTest {
 
 	public static void main(String[] args) {
@@ -44,8 +47,8 @@ public class LottoTest {
 		
 		// 파일 이름 출력
 		
-		LottoTest lottotest = new LottoTest();
-		System.out.println(lottotest);
+		//LottoTest lottotest = new LottoTest();
+		System.out.println(Arrays.toString(lotto));
 	}
 
 }

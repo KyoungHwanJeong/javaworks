@@ -17,10 +17,11 @@ public class EcoClient {
 			System.out.println("[클라이언트] 연결 성공");
 			
 			// 데이터 보내기
-			String sendMessage = "오늘도 즐거운 하루 되세요~";
+			String sendMessage = "자바 네트워크 프로그래밍!";
 			
 			OutputStream os = socket.getOutputStream();
 			byte[] bytes = sendMessage.getBytes("utf-8");	// 인코딩
+										// getBytes 문자가 안보내지므로
 			os.write(bytes);
 			
 			os.flush();
@@ -31,7 +32,10 @@ public class EcoClient {
 			InputStream is = socket.getInputStream();
 			bytes = new byte[1024];
 			int readBytes = is.read(bytes);
+					//문자열로 복원(디코딩)
 			String receiveMessage = new String(bytes, 0, readBytes, "utf-8");
+			//String​(byte[] bytes, int offset, int length, String charsetName)
+			//String지정된 문자 세트를 사용하여 지정된 바이트 하위 배열을 디코딩하여 새 항목을 생성합니다 .
 			System.out.println("[클라이언트] 데이터 받음: "+ receiveMessage);
 
 			

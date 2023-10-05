@@ -1,3 +1,15 @@
+/*
+ * ServerSocket 생성과 연결 수락.
+ * 1. ServerSocket 생성과 포트 바인딩.
+ * 2. 연결 수락.
+ * 3. 연결된 클라이언트 IP 주소 얻기.
+ * 4. 연결 끊기.
+ * 
+ * 
+ * 
+ * 
+*/
+
 package network.socket;
 
 import java.io.IOException;
@@ -10,7 +22,7 @@ public class ServerSample {
 
 	
 	// 서버 소켓 객체 선언
-	private static ServerSocket serverSocket;
+	private static ServerSocket serverSocket=null;
 	
 	public static void main(String[] args) {
 		
@@ -25,8 +37,8 @@ public class ServerSample {
 		Scanner scanner = new Scanner(System.in);
 		while(true) {
 			String key = scanner.nextLine();
-			if(key.toLowerCase().equals("q") 
-					|| key.toLowerCase().equals("Q")) break;
+			if(key.toLowerCase().equals("q"))
+				break;
 		}
 		
 		
@@ -37,20 +49,21 @@ public class ServerSample {
 	}
 
 	
-	
+	// TCP(Transmission Control Protocol) 네트워킹(연결지향적임)
 	private static void startServer() {
 		// 작업 스레드 생성
 		Thread thread = new Thread() {
 			@Override
 			public void run() {
 				try {
+				//
 				serverSocket = new ServerSocket(50001);
 				System.out.println("[서버] 시작됨");
 				
 				while(true) {
 					System.out.println("\n[서버] 연결 요청을 기다림\n");
 					// 서버가 연결 요청 수락함
-					Socket socket = serverSocket.accept();
+					Socket socket = serverSocket.accept();	// 시험에 나옴...
 									// 클라이언트와 통신할 소켓 생성
 					
 					// IP주소 알아내기
