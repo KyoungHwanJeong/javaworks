@@ -1,2 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <qualifiedTypeNameHistroy/>
+=======
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="constant.enums_2.Week_2"/>
+    <fullyQualifiedTypeName name="constant.enums.Season"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.lang.Thread.State"/>
+    <fullyQualifiedTypeName name="java.awt.Toolkit"/>
+    <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="customers_3.Customer"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon_2.RemoteControlTest"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon_2.RemoteControl"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon2_2.RemoteControl"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="nestedclass.student_2.Student.Score"/>
+    <fullyQualifiedTypeName name="nestedclass.interfaces_2.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+</qualifiedTypeNameHistroy>
+>>>>>>> 9a5164e8dd5cb6e34a936cb7e3cb3d7f92f8f2ef
