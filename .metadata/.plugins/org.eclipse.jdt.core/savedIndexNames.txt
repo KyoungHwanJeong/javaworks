@@ -1,22 +1,18 @@
 INDEX VERSION 1.134+C:\Javaworks\.metadata\.plugins\org.eclipse.jdt.core
-2363015031.index
 2255558868.index
-2001223783.index
 3835119037.index
+2001223783.index
+2363015031.index
 1865797976.index
 867096231.index
 497107840.index
+65025777.index
 173439706.index
 2050788949.index
-<<<<<<< HEAD
-1339176272.index
-1961297511.index
 2486366073.index
 569435344.index
-=======
 1961297511.index
-2486366073.index
->>>>>>> 9a5164e8dd5cb6e34a936cb7e3cb3d7f92f8f2ef
+1339176272.index
 3830979574.index
 3271193799.index
 2102479436.index

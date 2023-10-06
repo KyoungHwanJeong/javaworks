@@ -1,4 +1,4 @@
-package banking.arraylist2;
+package banking.arraylist3;
 
 import java.io.IOException;
 import java.util.ArrayList;
