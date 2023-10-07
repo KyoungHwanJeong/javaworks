@@ -19,9 +19,9 @@ public class BankArrayList {
 		
 		while(sw) {
 			try {
-				System.out.println("=====================================================================");
-				System.out.println("1.계좌 생성 | 2.계좌 목록 |3.예금 | 4.출금 | 5.계좌 삭제 | 6. 계좌 검색 | 7.종료");
-				System.out.println("=====================================================================");
+				System.out.println("====================================================================");
+				System.out.println("1.계좌 생성 | 2.계좌 목록 |3.예금 | 4.출금 | 5.계좌 삭제 | 6.계좌 검색 | 7.종료");
+				System.out.println("====================================================================");
 				System.out.println("선택>");
 				
 				// 메뉴 선택
@@ -59,9 +59,9 @@ public class BankArrayList {
 	
 	private static void creatAccount() {
 		
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------");
 		System.out.println("계좌 생성");
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------");
 		
 		while(true) {
 			
@@ -132,9 +132,9 @@ public class BankArrayList {
 	// 계좌 목록
 	private static void getAccountList() {
 		
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------");
 		System.out.println("계좌 목록");
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------");
 	
 		// 계좌 목록 조회
 		for(int i=0; i<accountList.size();i++) {
@@ -150,9 +150,9 @@ public class BankArrayList {
 	// 입금
 	private static void deposit() {
 		
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------");
 		System.out.println("입금");
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------");
 
 		while(true) {	// 계좌 번호 재입력
 			System.out.print("입금 계좌 번호(00-00-000)를 입력하세요.(메뉴로 돌아가려면 N 또는 n을 입력하세요): ");
@@ -200,9 +200,9 @@ public class BankArrayList {
 	// 출금
 	private static void withdraw() {
 		
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------");
 		System.out.println("출금");
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------");
 
 		while(true) {	// 계좌 번호 재입력
 			System.out.print("출금 계좌 번호(00-00-000)를 입력하세요.(메뉴로 돌아가려면 N 또는 n을 입력하세요): ");
@@ -252,9 +252,9 @@ public class BankArrayList {
 	// 계좌 삭제
 	private static void removeAccount() {
 		
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------");
 		System.out.println("계좌 삭제");
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------");
 
 		while(true) {
 			System.out.println("삭제할 계좌의 계좌 번호(00-00-000)를 입력하세요.(메뉴로 돌아가려면 N 또는 n을 입력하세요)");
@@ -263,8 +263,8 @@ public class BankArrayList {
 			if(ano2.toLowerCase().equals("n")) {
 				break;
 			}
-			while(true) {
-				if(findAccount(ano2) != null) {
+			if(findAccount(ano2) != null) {
+				while(true) {
 					Account account = findAccount(ano2);
 					System.out.println("삭제하려는 계좌 번호가 " +ano2 + " 가 맞습니까?(맞으면 Y 또는 y 틀리면 N 또는 n를 입력하세요.)");
 
@@ -280,20 +280,20 @@ public class BankArrayList {
 					}else {
 						System.out.println("잘못된 문자를 입력하셨습니다.");
 					}
-				}else {
-					System.out.println("삭제 할 계좌가 없거나 잘못된 문자를 입력하셨습니다.");
 				}
+				break;
+			}else {
+				System.out.println("삭제 할 계좌가 없거나 잘못된 문자를 입력하셨습니다.");
 			}
 		}
-		
 	}
 	
 	// 특정 계좌를 검색
 	private static void selectAccount() {
 		// 계좌 번호와 일치하는 계좌 검색.
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------");
 		System.out.println("계좌 검색");
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("--------------------------------------------------------------------");
 
 		while(true) {
 			System.out.println("검색할 계좌의 계좌 번호(00-00-000)를 입력하세요.(메뉴로 돌아가려면 N 또는 n을 입력하세요): ");
@@ -311,13 +311,13 @@ public class BankArrayList {
 					String sign = scanner.nextLine();
 					
 					if(sign.toLowerCase().equals("y")) {
-						System.out.println("---------------------------------------------------------------------");
+						System.out.println("--------------------------------------------------------------------");
 						System.out.println("계좌가 검색되었습니다.");
-						System.out.println("---------------------------------------------------------------------");
+						System.out.println("--------------------------------------------------------------------");
 						
 						System.out.print("계좌 번호: " + account.getAno() + "\t");
 						System.out.print("계좌 주: " + account.getOwner() + "\t");
-						System.out.print("잔고:" + account.getBalance() + "\t");				
+						System.out.print("잔고:" + account.getBalance() + "\t\n");
 						break;
 					}else if(sign.toLowerCase().equals("n")) {
 						System.out.println("검색이 취소되었습니다.");
@@ -331,7 +331,6 @@ public class BankArrayList {
 				System.out.println("검색 할 계좌가 없거나 잘못된 문자를 입력하셨습니다.");
 			}
 		}
-		System.out.println();
 	}
 	
 	// 계좌 검색
