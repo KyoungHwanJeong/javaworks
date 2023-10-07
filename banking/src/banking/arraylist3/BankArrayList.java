@@ -1,4 +1,4 @@
-package banking.arraylist2;
+package banking.arraylist3;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -206,7 +206,7 @@ boolean sw = true;
 		System.out.println("출금");
 		System.out.println("---------------------------------------------------------------------");
 
-		while(true) {		// 계좌 번호 재입력
+		while(true) {			// 계좌 번호 재입력
 			System.out.print("출금 계좌 번호(00-00-000)를 입력하세요.(메뉴로 돌아가려면 N 또는 n을 입력하세요): ");
 			String ano = scanner.nextLine();
 			
@@ -214,42 +214,42 @@ boolean sw = true;
 				break;
 			}
 			
-			if(findAccount(ano)!=null) {
-				while(true) {	// 출금액 재입력
-					Account account = findAccount(ano);
+			if(findAccount(ano)!=null) {	// 중복 계좌가 없으면
+				
+				Account account = findAccount(ano);
+				System.out.print("출금액을 입력하세요: ");
+				
+				int money = Integer.parseInt(scanner.nextLine());
+				
+				while(true) {
+					System.out.println("출금하려는 계좌의 계좌번호: " + ano
+							+ ", 출금액: " + money + "원이 맞습니까?");
+					System.out.println("(맞으면 Y 또는 y 틀리면 N 또는 n를 입력하세요.)");
 
-					System.out.print("출금액을 입력하세요: ");
-					int money = Integer.parseInt(scanner.nextLine());
-				
-					while(true) {
-						System.out.println("출금하려는 계좌의 계좌번호: " + ano
-								+ ", 출금액: " + money + "원이 맞습니까?");
-						System.out.println("(맞으면 Y 또는 y 틀리면 N 또는 n를 입력하세요.)");
-						String sign = scanner.nextLine();
-						if(sign.toLowerCase().equals("y")) {
-							if(money > account.getBalance()) {	// 출금액이 잔고보다 많으면
-									System.out.println("잔액이 부족합니다. 다시 입력해주세요.");
-			
-							}else {
-								account.setBalance(account.getBalance() - money);
-								System.out.println("결과: 정상 처리 되었습니다.");
-								break;
-							}
-						}else if(sign.toLowerCase().equals("n")) {
-							System.out.println("출금이 취소 되었습니다.");
-							break;
+					String sign = scanner.nextLine();
+					if(sign.toLowerCase().equals("y")) {
+						if(money > account.getBalance()) {	// 출금액이 잔고보다 많으면
+								System.out.println("잔액이 부족합니다. 다시 입력해주세요.");
+		
 						}else {
-							System.out.println("잘못된 문자를 입력하였습니다.");
+							account.setBalance(account.getBalance() - money);
+							System.out.println("결과: 정상 처리 되었습니다.");
+							break;
 						}
+					}else if(sign.toLowerCase().equals("n")) {
+						System.out.println("출금이 취소 되었습니다.");
+						break;
+					}else {
+						System.out.println("잘못된 문자를 입력하였습니다.");
 					}
-					break;
-				}// 안쪽 while
-				
+	
+				}
+			break;
 			}else {
 				System.out.println("결과: 계좌가 없습니다. 다시 입력해주세요.");
 			}
 			
-		}	// while 끝
+		}
 	}
 	
 	// 계좌 삭제
@@ -261,28 +261,29 @@ boolean sw = true;
 			if(ano2.toLowerCase().equals("n")) {
 				break;
 			}
+			while(true) {
+				if(findAccount(ano2)!=null) {
+					Account account = findAccount(ano2);
+					System.out.println("삭제하려는 계좌 번호가 " +ano2 + " 가 맞습니까?(맞으면 Y 또는 y 틀리면 N 또는 n를 입력하세요.)");
+	
+					String sign = scanner.nextLine();
+					
+					if(sign.toLowerCase().equals("y")) {
+						accountList.remove(account);
+						System.out.println("계좌가 삭제 되었습니다.");
+						break;
+					}else if(sign.toLowerCase().equals("n")){
+						System.out.println("삭제가 취소되었습니다.");
+						break;
+					}else {
+						System.out.println("---------------------------------------------------------------------");
+						System.out.println("잘못된 문자를 입력하셨습니다.");
 			
-			if(findAccount(ano2)!=null) {
-				Account account = findAccount(ano2);
-				System.out.println("삭제하려는 계좌 번호가 " +ano2 + " 가 맞습니까?(맞으면 Y 또는 y 틀리면 N 또는 n를 입력하세요.)");
-
-				String sign = scanner.nextLine();
-				
-				if(sign.toLowerCase().equals("y")) {
-					accountList.remove(account);
-					System.out.println("계좌가 삭제 되었습니다.");
-					break;
-				}else if(sign.toLowerCase().equals("n")){
-					System.out.println("삭제가 취소되었습니다.");
-					break;
+					}
+					
 				}else {
-					System.out.println("---------------------------------------------------------------------");
-					System.out.println("잘못된 문자를 입력하셨습니다.");
-		
+					System.out.println("삭제 할 계좌가 없거나 잘못된 문자를 입력하셨습니다.");
 				}
-				
-			}else {
-				System.out.println("삭제 할 계좌가 없거나 잘못된 문자를 입력하셨습니다.");
 			}
 		}
 		
@@ -302,34 +303,36 @@ boolean sw = true;
 				break;
 			}
 			
-			if(findAccount(ano3)!=null) {
-				Account account = findAccount(ano3);
-				System.out.println("검색 계좌 번호가 " +ano3 + " 가 맞습니까?(맞으면 Y 또는 y 틀리면 N 또는 n를 입력하세요.)");
-
-				String sign = scanner.nextLine();
-				
-				if(sign.toLowerCase().equals("y")) {
+			while(true) {
+				if(findAccount(ano3)!=null) {
+					Account account = findAccount(ano3);
+					System.out.println("검색 계좌 번호가 " +ano3 + " 가 맞습니까?(맞으면 Y 또는 y 틀리면 N 또는 n를 입력하세요.)");
+	
+					String sign = scanner.nextLine();
 					
-					System.out.println("---------------------------------------------------------------------");
-					System.out.println("계좌가 검색되었습니다.");
-					System.out.println("---------------------------------------------------------------------");
+					if(sign.toLowerCase().equals("y")) {
+						
+						System.out.println("---------------------------------------------------------------------");
+						System.out.println("계좌가 검색되었습니다.");
+						System.out.println("---------------------------------------------------------------------");
+						
+						System.out.print("계좌 번호: " + account.getAno() + "\t");
+						System.out.print("계좌 주: " + account.getOwner() + "\t");
+						System.out.print("잔고:" + account.getBalance() + "\t");				
+						
+						break;
+					}else if(sign.toLowerCase().equals("n")){
+						System.out.println("검색이 취소되었습니다.");
+						break;
+					}else {
+						System.out.println("---------------------------------------------------------------------");
+						System.out.println("잘못된 문자를 입력하셨습니다.");
+			
+					}
 					
-					System.out.print("계좌 번호: " + account.getAno() + "\t");
-					System.out.print("계좌 주: " + account.getOwner() + "\t");
-					System.out.print("잔고:" + account.getBalance() + "\t");				
-					
-					break;
-				}else if(sign.toLowerCase().equals("n")){
-					System.out.println("검색이 취소되었습니다.");
-					break;
 				}else {
-					System.out.println("---------------------------------------------------------------------");
-					System.out.println("잘못된 문자를 입력하셨습니다.");
-		
+					System.out.println("검색 할 계좌가 없거나 잘못된 문자를 입력하셨습니다.");
 				}
-				
-			}else {
-				System.out.println("검색 할 계좌가 없거나 잘못된 문자를 입력하셨습니다.");
 			}
 			
 		}

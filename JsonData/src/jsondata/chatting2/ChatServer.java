@@ -27,7 +27,7 @@ public class ChatServer {
 			Collections.synchronizedMap(new HashMap<>());
 	
 	public void start() throws IOException {
-		serverSocket = new ServerSocket(8000);
+		serverSocket = new ServerSocket(6000);
 		System.out.println("[서버] 시작됨");
 		
 		//항상 연결을 준비함 - 스레드를 만들어야함
