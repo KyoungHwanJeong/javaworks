@@ -5,7 +5,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-import banking.array.Account;
+import banking.domain.Account;
+
+
 
 public class BankArrayList {
 	
@@ -85,10 +87,10 @@ public class BankArrayList {
 						System.out.print("계좌 주를 입력하세요(한글, 영문): ");
 						String owner = scanner.nextLine();
 						
-						String regExp2 = "([a-zA-Zㄱ-ㅎ가-힣]+)";
+						String regExp2 = "([a-zA-Zㄱ-ㅎ가-힣]+)";			// 영어, 한글만
 						boolean result2 = Pattern.matches(regExp2, owner);
 						if(result2 == false) {
-							System.out.println("계좌 주 형식이 아닙니다. 다시 입력해주세요.");
+							System.out.println("계좌 주는 한글과 영문만 가능합니다. 다시 입력해주세요.");
 
 						}else {
 							
@@ -118,14 +120,14 @@ public class BankArrayList {
 									System.out.println("잘못된 문자를 입력하였습니다.");
 								}
 
-							}
+							} // 안쪽 while끝
 							break;
 						}	
 					}
 				}
 				break;
 			}
-		}
+		} // 바깥쪽 while 끝
 	}// creatAccount() 끝
 	
 	

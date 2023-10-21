@@ -8,21 +8,17 @@ public class ClientSample {
 
 	public static void main(String[] args) {
 
-	
-			try {
-				// Socket 객체 생성 및 연결 요청.
-				Socket socket = new Socket("localhost", 50001);
-				System.out.println("[클라이언트] 연결 성공");
-				
-				socket.close();
-				System.out.println("[클라이언트] 연결 끊음");
-				
-				
-			} catch (UnknownHostException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		
+		// Socket 객체 생성
+		try {
+			Socket socket = new Socket("localhost", 50001);
+			System.out.println("[클라이언트] 연결 성공");
+			socket.close();
+			System.out.println("[클라이언트] 연결 끊음");
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
+
 }

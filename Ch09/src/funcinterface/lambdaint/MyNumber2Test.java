@@ -1,3 +1,9 @@
+/*
+* 람다식 활용하기.
+* 1. 5와 11 중에 더 큰 수 출력하기
+*
+*/
+
 package funcinterface.lambdaint;
 
 public class MyNumber2Test {
@@ -16,7 +22,7 @@ public class MyNumber2Test {
 		
 		// getMax() 호출
 		//myNum.getMax(5, 11);
-		System.out.println("더 큰수는 "+ myNum.getMax(5, 11));
+		System.out.println("더 큰 수는 "+ myNum.getMax(5, 11));
 		
 	}
 

@@ -1,3 +1,15 @@
+/*
+ * 추상 메서드와 람다식 활용하기.
+ * Workable 인터페이스
+ * Person
+ * Main
+ * 1. 	"출근을 합니다."
+ * 		"프로그래밍을 합니다."
+ * 		"퇴근을 합니다."
+ * 가 출력 되도록 람다식으로 구현하기.
+ * 
+*/
+
 package funcinterface.object;
 
 public class LambdaPersonTest {
