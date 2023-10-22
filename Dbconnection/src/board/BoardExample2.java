@@ -214,7 +214,7 @@ public class BoardExample2 {
 	public void delete(Board board) {
 		// 확인, 취소 메뉴
 		System.out.println("정말로 삭제하시겠습니까?");
-		System.out.println("1. OK, | 2. Cannel");
+		System.out.println("1. OK | 2. Cannel");
 		System.out.print("선택: ");
 		
 		String menuNo = scanner.nextLine();
@@ -241,7 +241,7 @@ public class BoardExample2 {
 		System.out.println("==============================================");
 		// 확인, 취소 메뉴
 		System.out.println("정말로 삭제하시겠습니까?");
-		System.out.println("1. OK, | 2. Cannel");
+		System.out.println("1. OK | 2. Cancel");
 		System.out.print("선택: ");
 		
 		String menuNo = scanner.nextLine();
