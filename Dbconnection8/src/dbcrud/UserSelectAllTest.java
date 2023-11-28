@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import Domain.User;
+import domain.User;
 
 public class UserSelectAllTest {
 
